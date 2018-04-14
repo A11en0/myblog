@@ -16492,3 +16492,515 @@ Traceback (most recent call last):
   File "/home/env_blog/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: login.html
+2018-04-14 08:55:19,604 [Thread-2:140552913725184] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/connections.py", line 277, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'blogdb.blog_comment' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 272, in __iter__
+    self._fetch_all()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 107, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1015, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/MySQLdb/connections.py", line 277, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'blogdb.blog_comment' doesn't exist")
+2018-04-14 08:55:56,945 [Thread-4:139660726630144] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 08:55:56,960 [Thread-5:139660718237440] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 08:55:57,078 [Thread-6:139660709844736] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 08:55:57,125 [Thread-7:139660701452032] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 08:56:00,700 [Thread-9:139660701452032] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 08:56:00,712 [Thread-10:139660709844736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 08:56:00,767 [Thread-11:139660709844736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 08:56:00,924 [Thread-12:139660709844736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 08:59:39,793 [Thread-4:140334213879552] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 08:59:39,825 [Thread-5:140334205486848] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 08:59:39,847 [Thread-6:140334197094144] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 08:59:39,949 [Thread-7:140334188701440] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 09:04:46,179 [Thread-3:140152658495232] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:04:46,198 [Thread-4:140152650102528] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:06:37,215 [Thread-22:140152666887936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:06:37,234 [Thread-23:140152650102528] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:06:37,371 [Thread-24:140152433276672] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:06:37,394 [Thread-25:140152424883968] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:07:04,014 [Thread-31:140152424883968] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:07:04,031 [Thread-32:140152433276672] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:07:04,152 [Thread-33:140152650102528] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:07:04,216 [Thread-34:140152666887936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:07:10,003 [Thread-36:140152666887936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:07:10,021 [Thread-37:140152650102528] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:07:17,568 [Thread-40:140152416491264] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:07:17,633 [Thread-41:140152416491264] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:07:17,638 [Thread-42:140152424883968] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:07:21,298 [Thread-43:140152424883968] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 207, in do_login
+    return render(request, 'login.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2018-04-14 09:07:26,369 [Thread-44:140152424883968] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /reg
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 182, in do_reg
+    return render(request, 'reg.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: reg.html
+2018-04-14 09:32:01,312 [Thread-8:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:32:01,338 [Thread-9:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:32:01,425 [Thread-10:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:32:01,495 [Thread-11:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:32:54,119 [Thread-13:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:32:54,141 [Thread-14:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:33:40,107 [Thread-23:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:33:40,134 [Thread-24:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:33:40,224 [Thread-25:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:33:40,279 [Thread-26:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:34:58,543 [Thread-28:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:34:58,570 [Thread-29:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:34:58,663 [Thread-30:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:34:58,720 [Thread-31:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:35:12,331 [Thread-33:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:35:12,353 [Thread-34:140466736981760] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:36:17,407 [Thread-4:140162499606272] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 09:36:17,430 [Thread-5:140162491213568] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 09:36:17,511 [Thread-6:140162482820864] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 09:36:17,576 [Thread-7:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 09:36:20,912 [Thread-9:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:36:20,937 [Thread-10:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:36:21,004 [Thread-11:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:36:21,130 [Thread-12:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:36:50,370 [Thread-14:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:36:50,406 [Thread-15:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:36:50,480 [Thread-16:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:36:50,543 [Thread-17:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:37:11,192 [Thread-19:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:37:11,222 [Thread-20:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:37:11,292 [Thread-21:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:37:11,348 [Thread-22:140162474428160] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:38:29,614 [Thread-3:140641837065984] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:38:29,632 [Thread-4:140641837065984] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:38:29,744 [Thread-5:140641837065984] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:38:29,806 [Thread-6:140641837065984] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:39:45,888 [Thread-3:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:39:45,921 [Thread-4:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:39:46,007 [Thread-5:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:39:46,081 [Thread-6:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:40:55,057 [Thread-8:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:40:55,077 [Thread-9:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:40:55,186 [Thread-10:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:40:55,250 [Thread-11:140168822798080] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:42:39,949 [Thread-3:139899943483136] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:42:39,987 [Thread-4:139899943483136] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:42:40,064 [Thread-5:139899943483136] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:42:40,121 [Thread-6:139899943483136] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:44:40,899 [Thread-4:139851231123200] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:44:40,904 [Thread-5:139851222730496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:44:40,912 [Thread-6:139851214337792] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:45:15,328 [Thread-3:139808759604992] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:45:15,348 [Thread-4:139808751212288] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:45:15,429 [Thread-5:139808742819584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:45:15,484 [Thread-6:139808742819584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:46:28,691 [Thread-3:140543626737408] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:46:28,725 [Thread-4:140543626737408] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:46:28,806 [Thread-5:140543626737408] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:46:28,867 [Thread-6:140543626737408] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:47:11,988 [Thread-3:139733405529856] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:47:12,012 [Thread-4:139733405529856] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:47:12,081 [Thread-5:139733405529856] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:47:12,145 [Thread-6:139733405529856] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:47:41,489 [Thread-4:139852582479616] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:47:41,531 [Thread-5:139852582479616] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:47:41,631 [Thread-6:139852582479616] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:47:41,701 [Thread-7:139852582479616] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:48:04,262 [Thread-3:140035730962176] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:48:04,291 [Thread-4:140035730962176] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:48:04,414 [Thread-5:140035730962176] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:48:04,430 [Thread-6:140035730962176] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:49:02,837 [Thread-8:140035810912000] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:49:02,857 [Thread-9:140035722569472] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:49:02,963 [Thread-10:140035722569472] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:49:03,030 [Thread-11:140035722569472] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:50:32,545 [Thread-3:139784165701376] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:50:32,581 [Thread-4:139784157308672] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:50:32,664 [Thread-5:139784148915968] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:50:32,730 [Thread-6:139784148915968] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:51:20,573 [Thread-2:139853053572864] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 117, in article
+    return render(request, 'single.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader_tags.py", line 194, in render
+    return template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2018-04-14 09:51:40,236 [Thread-3:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:51:40,260 [Thread-4:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:51:40,330 [Thread-5:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:51:40,391 [Thread-6:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:51:57,156 [Thread-9:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 09:51:57,170 [Thread-10:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 09:51:57,250 [Thread-11:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 09:51:57,293 [Thread-12:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 09:52:01,315 [Thread-14:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:52:01,325 [Thread-15:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:52:57,881 [Thread-17:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:52:57,898 [Thread-18:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:52:57,974 [Thread-19:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:52:58,036 [Thread-20:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:53:09,094 [Thread-22:140156258481920] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:53:09,102 [Thread-23:140156250089216] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:55:31,825 [Thread-3:139697868027648] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:55:31,844 [Thread-4:139697859634944] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:55:31,972 [Thread-5:139697859634944] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:55:32,030 [Thread-6:139697859634944] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:56:37,691 [Thread-4:139873998599936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:56:37,717 [Thread-5:139873998599936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 09:56:37,795 [Thread-6:139873998599936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 09:56:37,845 [Thread-7:139873998599936] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:04:21,889 [Thread-4:140673265170176] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:04:21,929 [Thread-5:140673256777472] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:04:21,948 [Thread-6:140673256777472] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:04:22,006 [Thread-7:140673256777472] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:04:24,774 [Thread-8:140673256777472] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 117, in article
+    return render(request, 'single.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/defaulttags.py", line 970, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 488, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 549, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'if'. Looking for one of: endif.
+2018-04-14 10:05:35,645 [Thread-3:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:05:35,681 [Thread-4:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:05:35,781 [Thread-5:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:05:35,885 [Thread-6:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:05:37,860 [Thread-8:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:05:37,898 [Thread-9:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:05:37,931 [Thread-10:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:05:38,023 [Thread-11:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:05:41,780 [Thread-13:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:05:41,867 [Thread-14:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:05:41,885 [Thread-15:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:05:42,020 [Thread-16:140161022686976] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:45:10,012 [Thread-20:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /comment/post/static/assets/js/jquery.min.js
+2018-04-14 10:45:10,051 [Thread-21:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /comment/post/static/assets/js/template.js
+2018-04-14 10:45:10,122 [Thread-22:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /comment/post/static/assets/js/jquery.min.js
+2018-04-14 10:45:10,173 [Thread-23:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /comment/post/static/assets/js/template.js
+2018-04-14 10:45:18,782 [Thread-25:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:45:18,827 [Thread-26:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:45:18,855 [Thread-27:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:45:18,945 [Thread-28:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:45:22,518 [Thread-30:140161004852992] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:45:22,585 [Thread-31:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:46:04,835 [Thread-33:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:46:04,863 [Thread-34:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:46:04,944 [Thread-35:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:46:04,999 [Thread-36:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:51:58,912 [Thread-38:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:51:58,938 [Thread-39:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:51:59,119 [Thread-40:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:51:59,131 [Thread-41:140161013245696] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:54:33,013 [Thread-52:140160979412736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:54:33,039 [Thread-53:140160979412736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:54:33,120 [Thread-54:140160979412736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:54:33,180 [Thread-55:140160979412736] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:56:06,977 [Thread-4:140517907363584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:56:06,993 [Thread-5:140517907363584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:56:07,189 [Thread-7:140517907363584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:56:07,206 [Thread-8:140517907363584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:56:24,046 [Thread-12:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:56:24,062 [Thread-13:140517873006336] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:56:24,236 [Thread-14:140517864613632] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/jquery.min.js
+2018-04-14 10:56:24,250 [Thread-15:140517864613632] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/static/assets/js/template.js
+2018-04-14 10:58:17,233 [Thread-32:140517907363584] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:58:17,249 [Thread-33:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:58:17,356 [Thread-35:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:58:17,415 [Thread-36:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:59:12,242 [Thread-48:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:59:12,281 [Thread-49:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 10:59:12,363 [Thread-51:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 10:59:12,427 [Thread-52:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:00:57,359 [Thread-54:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:00:57,386 [Thread-55:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:00:57,491 [Thread-57:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:00:57,506 [Thread-58:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:01:08,014 [Thread-60:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:01:08,028 [Thread-62:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:01:54,854 [Thread-69:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:01:54,872 [Thread-70:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:01:54,986 [Thread-72:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:01:55,041 [Thread-73:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:05:47,533 [Thread-82:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:05:47,559 [Thread-83:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:05:47,715 [Thread-84:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:05:47,728 [Thread-85:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:05:51,402 [Thread-87:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:05:51,416 [Thread-88:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:05:51,479 [Thread-90:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:05:51,539 [Thread-91:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:08:25,826 [Thread-104:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:08:25,874 [Thread-105:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:08:25,973 [Thread-107:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:08:26,039 [Thread-108:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:08:30,021 [Thread-110:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:08:30,061 [Thread-111:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:08:30,079 [Thread-113:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:08:30,171 [Thread-114:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:09:02,054 [Thread-123:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:09:02,070 [Thread-124:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:09:02,180 [Thread-126:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:09:02,240 [Thread-127:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:09:34,918 [Thread-129:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:09:34,933 [Thread-130:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:09:34,998 [Thread-132:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:09:35,059 [Thread-133:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:10:09,527 [Thread-142:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:10:09,544 [Thread-143:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:10:09,635 [Thread-145:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:10:09,697 [Thread-146:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:10:47,230 [Thread-149:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:10:47,244 [Thread-150:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:10:47,323 [Thread-151:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:10:47,384 [Thread-152:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:11:08,747 [Thread-154:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:11:08,783 [Thread-155:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:11:08,800 [Thread-157:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:11:08,918 [Thread-158:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:11:53,479 [Thread-160:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:11:53,505 [Thread-161:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:11:53,576 [Thread-163:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:11:53,634 [Thread-164:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:12:22,168 [Thread-166:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:12:22,178 [Thread-168:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:12:22,276 [Thread-169:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:15:45,976 [Thread-172:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:15:46,006 [Thread-173:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:15:46,095 [Thread-175:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:15:46,157 [Thread-176:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:16:41,728 [Thread-178:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:16:41,737 [Thread-179:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:16,042 [Thread-184:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:16,072 [Thread-185:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:16,166 [Thread-187:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:16,230 [Thread-188:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:42,822 [Thread-190:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:42,838 [Thread-191:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:46,445 [Thread-194:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:46,466 [Thread-195:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:46,546 [Thread-197:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:46,604 [Thread-198:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:51,719 [Thread-200:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:51,736 [Thread-201:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:19:51,792 [Thread-203:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:19:51,852 [Thread-204:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:21:00,420 [Thread-206:140517907101440] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:21:00,446 [Thread-207:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:21:00,550 [Thread-209:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:21:00,609 [Thread-210:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:21:17,515 [Thread-212:140517872744192] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:21:17,528 [Thread-213:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:21:17,588 [Thread-214:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:22:49,326 [Thread-218:140517889791744] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:22:49,354 [Thread-219:140517855434496] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:22:49,450 [Thread-221:140517505496832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:22:49,515 [Thread-222:140517881399040] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:23:55,864 [Thread-3:139623241176832] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:23:55,882 [Thread-4:139623232784128] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:23:55,979 [Thread-6:139622877230848] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:23:56,050 [Thread-7:139622868838144] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 11:28:39,333 [Thread-14:139623232784128] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
+2018-04-14 11:28:45,145 [Thread-15:139623249569536] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js

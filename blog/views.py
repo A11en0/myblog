@@ -86,18 +86,13 @@ def article(request):
     try:
         # 获取文章id
         id = request.GET.get('id', None)
-        #print("GYH", id)
+        print(id+"okjb")
         try:
             # 获取文章信息
             article = Article.objects.get(id=id)
         except Article.DoesNotExist:
             return render(request, 'failure.html', {'reason': '没有找到对应的文章'})
 
-        # 评论表单
-        comment_form = CommentForm({'author': request.user.username,
-                                    'email': request.user.email,
-                                    'url': request.user.url,
-                                    'article': id} if request.user.is_authenticated() else{'article': id})
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article).order_by('id')
@@ -112,7 +107,6 @@ def article(request):
             if comment.pid is None:
                 comment_list.append(comment)
         comment_num = len(comment_list)
-        print("GYH", comment_form)
     except Exception as e:
         logger.error(e)
     return render(request, 'single.html', locals())
@@ -129,7 +123,6 @@ def blog(request):
 def comment_post(request):
     try:
         comment_form = CommentForm(request.POST)
-        print("ok")
         if comment_form.is_valid():
             # 获取表单信息
             comment = Comment.objects.create(username=comment_form.cleaned_data["author"],

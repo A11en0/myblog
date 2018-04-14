@@ -20,20 +20,14 @@ from django.conf import settings
 from django.views.static import serve
 from blog.upload import upload_image
 
-#import notifications.urls
-from django.conf.urls.static import static
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT, }),
-    re_path(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
+    #re_path(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT, }),
+    #re_path(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
     re_path('', include('blog.urls')),
-
     re_path(r'^comment/post/$', comment_post, name='comment_post'),
     re_path(r'^logout$', do_logout, name='logout'),
     re_path(r'^reg', do_reg, name='reg'),
     re_path(r'^login', do_login, name='login'),
    ] 
-    #re_path(r'', include('ckeditor_uploader.urls')),
-    #re_path(r'', include('easy_comment.urls')),
-    #re_path(r'^notifications/', include(notifications.urls, namespace='notifications')),
+

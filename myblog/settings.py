@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blogdb',
+        'NAME': 'origindb',
         'USER' : 'django',
         'PASSWORD'  : 'gyh201727',
         'HOST' : '120.77.251.209',
@@ -236,31 +236,4 @@ LOGGING = {
     }
 }
 
-#ckeditor setup
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
-CKEDITOR_UPLOAD_PATH = 'upload/'
-CKEDITOR_IMAGE_BACKEND = 'pillow'
-CKEDITOR_CONFIGS = {
-    'default': {
-        # 编辑器的宽高请根据你的页面自行设置
-        'width':'730px',
-        'height':'150px',
-        'image_previewText':' ',
-        'tabSpaces': 4,
-        'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Bold', 'Italic', 'Underline', 'Format', 'RemoveFormat'],
-            ['NumberedList', 'BulletedList'],
-            ['Blockquote', 'CodeSnippet'],
-            ['Image', 'Link', 'Unlink']
-        ],
-        'extraPlugins': ','.join(['codesnippet','uploadimage','prism','widget','lineutils',]),
-    }
-}
-CKEDITOR_ALLOW_NONIMAGE_FILES = False
-# 限制用户查看上传图片的权限， 只能看自己传的图片
-CKEDITOR_RESTRICT_BY_USER = True
-CKEDITOR_RESTRICT_BY_DATE = True
-CKEDITOR_BROWSE_SHOW_DIRS = True
 
