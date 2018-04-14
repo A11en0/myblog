@@ -1,0 +1,384 @@
+2018-02-21 08:35:41,447 [Thread-2:139760495744768] [blog.views:26] [views:index] [ERROR]- name 'ariticle_list' is not defined
+2018-02-21 08:38:20,178 [Thread-23:140419056793344] [blog.views:26] [views:index] [ERROR]- invalid literal for int() with base 10: '1/admi'
+2018-02-21 10:30:37,252 [Thread-2:140493212088064] [blog.views:47] [views:archive] [ERROR]- name 'date_publish' is not defined
+2018-02-21 10:51:20,945 [Thread-2:140264087996160] [blog.views:48] [views:archive] [ERROR]- name 'date_publish' is not defined
+2018-02-24 04:39:53,051 [Thread-2:140429683853056] [blog.views:110] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 04:39:53,077 [Thread-3:140429675198208] [blog.views:110] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 04:39:54,576 [Thread-12:140429675198208] [blog.views:110] [views:article] [ERROR]- failure.html
+2018-02-24 04:39:56,965 [Thread-20:140429675198208] [blog.views:110] [views:article] [ERROR]- failure.html
+2018-02-24 04:39:57,827 [Thread-28:140429450274560] [blog.views:110] [views:article] [ERROR]- failure.html
+2018-02-24 04:40:01,826 [Thread-37:140429433489152] [blog.views:110] [views:article] [ERROR]- failure.html
+2018-02-24 04:40:09,230 [Thread-45:140429433489152] [blog.views:110] [views:article] [ERROR]- failure.html
+2018-02-24 05:15:09,926 [Thread-2:140498459248384] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:15:10,629 [Thread-3:140498459248384] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:15:11,259 [Thread-4:140498459248384] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:15:19,513 [Thread-5:140498459248384] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:27:55,228 [Thread-7:140677381785344] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:27:56,942 [Thread-15:140677398570752] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:27:58,214 [Thread-24:140677390178048] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:28:00,229 [Thread-38:140677406963456] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:28:08,178 [Thread-51:140677406963456] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:28:21,949 [Thread-64:140677423748864] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:28:26,078 [Thread-72:140677381785344] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:28:55,933 [Thread-8:140663400167168] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:30:00,258 [Thread-11:139909700515584] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:30:10,101 [Thread-2:140244918064896] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:30:10,499 [Thread-10:140244918064896] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:30:11,553 [Thread-19:140244824872704] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:30:12,951 [Thread-27:140244808087296] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:30:24,091 [Thread-35:140244808087296] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:30:29,893 [Thread-20:139646931498752] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:30:44,628 [Thread-26:139646931498752] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:30:52,808 [Thread-41:139646939891456] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:30:56,327 [Thread-49:139646939891456] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:31:30,933 [Thread-2:139859071846144] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:31:31,672 [Thread-11:139859062667008] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:31:46,758 [Thread-22:139859054274304] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:31:47,597 [Thread-2:140152078731008] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 05:31:47,648 [Thread-3:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:47,690 [Thread-4:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:47,722 [Thread-5:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:47,727 [Thread-6:140152061159168] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:47,743 [Thread-7:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:48,343 [Thread-9:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:48,423 [Thread-10:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:48,462 [Thread-11:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:48,469 [Thread-12:140152061159168] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:48,495 [Thread-13:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:48,519 [Thread-14:140152052766464] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:58,904 [Thread-15:140152052766464] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:58,945 [Thread-16:140152052766464] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:58,992 [Thread-17:140152052766464] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:59,045 [Thread-19:140152061159168] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:59,050 [Thread-18:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:31:59,052 [Thread-20:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:00,832 [Thread-21:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:00,920 [Thread-22:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:00,973 [Thread-23:140152078731008] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:00,982 [Thread-24:140152061159168] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:01,024 [Thread-25:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:01,038 [Thread-26:140152052766464] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:12,012 [Thread-27:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:12,071 [Thread-28:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:12,119 [Thread-29:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:12,139 [Thread-30:140152069551872] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:12,172 [Thread-32:140152061159168] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:32:12,175 [Thread-31:140152052766464] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:38:47,825 [Thread-8:140044427740928] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:38:52,150 [Thread-21:140044418561792] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:39:00,376 [Thread-34:140044427740928] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:39:02,581 [Thread-47:140044427740928] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:39:05,837 [Thread-60:140044418561792] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:47:39,326 [Thread-12:140246845826816] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:47:44,923 [Thread-20:140246837434112] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:47:48,341 [Thread-28:140246845826816] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:47:59,996 [Thread-36:140246837434112] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:49:17,193 [Thread-8:139790893631232] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:50:15,191 [Thread-29:139790893631232] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:51:14,683 [Thread-60:139790884452096] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:51:17,640 [Thread-71:139790893631232] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 05:51:21,435 [Thread-82:139790893631232] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:04:30,335 [Thread-2:140268237043456] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:04:38,818 [Thread-16:140268237043456] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:04:45,813 [Thread-29:140268227864320] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:04:48,449 [Thread-42:140268227864320] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:05:04,935 [Thread-2:140278953371392] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:05:49,758 [Thread-15:140278953371392] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:06:07,948 [Thread-22:140278732158720] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:06:08,737 [Thread-31:140278706980608] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:06:19,630 [Thread-40:140278723766016] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:06:29,576 [Thread-49:140278715373312] [blog.views:102] [views:article] [ERROR]- failure.html
+2018-02-24 06:10:56,857 [Thread-2:139997232113408] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:10:59,219 [Thread-16:139997232113408] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:11:02,327 [Thread-29:139997222934272] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:11:05,079 [Thread-42:139997009147648] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:11:57,445 [Thread-2:140688262801152] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:12:07,253 [Thread-20:140688253622016] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:12:13,315 [Thread-33:140688245229312] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:12:53,434 [Thread-46:140688253622016] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:13:05,602 [Thread-54:140688245229312] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:13:13,931 [Thread-63:140688020727552] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:14:20,268 [Thread-72:140688245229312] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:14:21,324 [Thread-81:140688012334848] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:14:21,969 [Thread-90:140688245229312] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:14:25,760 [Thread-104:140688012334848] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:14:32,381 [Thread-117:140688262801152] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:16:10,823 [Thread-133:140688020727552] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:17:42,858 [Thread-146:140688262801152] [blog.views:102] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:18:08,534 [Thread-8:140477282109184] [blog.views:103] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:18:49,952 [Thread-7:139996179519232] [blog.views:103] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:20:21,842 [Thread-7:140223702890240] [blog.views:103] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:21:37,413 [Thread-15:140223694497536] [blog.views:103] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:21:39,913 [Thread-8:140004324013824] [blog.views:84] [views:article] [ERROR]- Cannot resolve keyword 'sku' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-02-24 06:23:29,077 [Thread-8:140544375129856] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:24:26,611 [Thread-21:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:24:36,862 [Thread-34:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:24:39,696 [Thread-47:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:25:35,197 [Thread-55:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:48,278 [Thread-56:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:49,155 [Thread-57:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:49,881 [Thread-58:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:50,674 [Thread-59:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:51,286 [Thread-60:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:51,687 [Thread-61:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:52,006 [Thread-62:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:52,176 [Thread-63:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:52,446 [Thread-64:140544375129856] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:52,553 [Thread-65:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:26:52,712 [Thread-66:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:27:37,798 [Thread-68:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:27:45,389 [Thread-76:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:27:51,121 [Thread-84:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:29:17,586 [Thread-92:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:29:26,137 [Thread-100:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:31:18,532 [Thread-108:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:31:20,246 [Thread-116:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:31:27,976 [Thread-130:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:32:01,387 [Thread-146:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:32:38,125 [Thread-164:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:35:21,563 [Thread-171:140544147715840] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:39:32,813 [Thread-270:140544122537728] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:39:34,687 [Thread-282:140544122537728] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:39:36,518 [Thread-294:140544365950720] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:39:43,147 [Thread-311:140544375129856] [blog.views:109] [views:blog] [ERROR]- invalid literal for int() with base 10: '2fd'
+2018-02-24 06:39:49,228 [Thread-316:140544130930432] [blog.views:109] [views:blog] [ERROR]- invalid literal for int() with base 10: '2gsad'
+2018-02-24 06:39:52,506 [Thread-321:140544375129856] [blog.views:109] [views:blog] [ERROR]- That page contains no results
+2018-02-24 06:40:00,788 [Thread-331:140544375129856] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:05,140 [Thread-343:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:09,740 [Thread-355:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:15,362 [Thread-372:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:25,223 [Thread-389:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:34,325 [Thread-406:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:46,216 [Thread-428:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:40:54,553 [Thread-445:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:41:10,425 [Thread-462:140544139323136] [blog.views:109] [views:blog] [ERROR]- invalid literal for int() with base 10: '2/1'
+2018-02-24 06:41:18,644 [Thread-477:140544139323136] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:42:32,322 [Thread-519:140544139323136] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:42:46,539 [Thread-536:140544139323136] [blog.views:109] [views:blog] [ERROR]- invalid literal for int() with base 10: '2/1'
+2018-02-24 06:42:55,477 [Thread-541:140544122537728] [blog.views:109] [views:blog] [ERROR]- invalid literal for int() with base 10: '2/14321'
+2018-02-24 06:42:58,602 [Thread-546:140544139323136] [blog.views:109] [views:blog] [ERROR]- invalid literal for int() with base 10: '1/14321'
+2018-02-24 06:43:36,449 [Thread-589:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:45:40,394 [Thread-601:140544130930432] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:50:25,203 [Thread-613:140544139323136] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 06:56:13,982 [Thread-635:140544139323136] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:15:19,436 [Thread-15:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:15:23,214 [Thread-27:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:15:28,466 [Thread-39:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:15:34,176 [Thread-56:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:15:50,475 [Thread-66:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:21:56,135 [Thread-78:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:24:52,215 [Thread-85:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:25:10,951 [Thread-98:140648015451904] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:25:59,733 [Thread-105:140648015451904] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:26:05,272 [Thread-119:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:26:23,804 [Thread-137:140648007059200] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:26:27,450 [Thread-147:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:26:32,274 [Thread-154:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:26:34,020 [Thread-162:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:26:58,896 [Thread-170:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:27:15,098 [Thread-171:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:27:38,864 [Thread-220:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:28:02,433 [Thread-229:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:28:03,558 [Thread-235:140647998666496] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:28:57,278 [Thread-241:140648015451904] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:29:43,187 [Thread-252:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:29:44,308 [Thread-253:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:29:46,853 [Thread-259:140647998666496] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:29:47,565 [Thread-265:140648023844608] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:30:14,329 [Thread-271:140647998666496] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:30:15,284 [Thread-277:140648023844608] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:30:16,070 [Thread-283:140648015451904] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:30:16,834 [Thread-289:140648253200128] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:30:17,197 [Thread-295:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:30:38,724 [Thread-300:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:31:37,180 [Thread-306:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:31:38,292 [Thread-312:140648032237312] [blog.views:102] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 07:32:48,753 [Thread-2:140250253510400] [blog.views:103] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:17,185 [Thread-2:140426652141312] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:18,389 [Thread-7:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:18,998 [Thread-13:140426652141312] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:19,301 [Thread-18:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:19,393 [Thread-19:140426652141312] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:19,703 [Thread-23:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:19,811 [Thread-25:140426652141312] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:19,907 [Thread-26:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:25,131 [Thread-32:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:25,846 [Thread-38:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:26,505 [Thread-44:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:27,025 [Thread-50:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:27,557 [Thread-56:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:28,085 [Thread-62:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:28,598 [Thread-68:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:29,220 [Thread-74:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:29,708 [Thread-80:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:35,672 [Thread-91:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 09:51:39,405 [Thread-96:140426564593408] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:00:32,446 [Thread-102:140426572986112] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:01:17,356 [Thread-2:140047061968640] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:01:41,705 [Thread-2:140461354030848] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:01:43,399 [Thread-8:140461345638144] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:01:44,009 [Thread-14:140461354030848] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:20:08,592 [Thread-8:139670591633152] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:21:16,798 [Thread-2:140182550275840] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:22:05,869 [Thread-8:140182550275840] [blog.views:107] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:22:08,448 [Thread-2:140560589387520] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:22:08,968 [Thread-8:140560547424000] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:22:09,269 [Thread-13:140560580994816] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:22:09,421 [Thread-14:140560589387520] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 10:22:11,032 [Thread-23:140560555816704] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 12:27:23,015 [Thread-30:140560572602112] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 12:59:43,701 [Thread-331:140560580994816] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:04:05,137 [Thread-49:140068289324800] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:04:29,454 [Thread-56:140068289324800] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:09:24,115 [Thread-171:140068297717504] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:09:39,124 [Thread-176:140068297717504] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:10:53,065 [Thread-219:140068297717504] [blog.views:109] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:55:38,631 [Thread-2:139938986837760] [blog.views:108] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:55:40,118 [Thread-8:139938986837760] [blog.views:108] [views:article] [ERROR]- name 'CommentForm' is not defined
+2018-02-24 13:57:55,441 [Thread-2:140057385473792] [blog.views:109] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:00:30,064 [Thread-8:140057377081088] [blog.views:109] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:31:27,079 [Thread-2:140080241305344] [blog.views:115] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:36:53,623 [Thread-2:139839281633024] [blog.views:112] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:37:39,313 [Thread-8:139838900664064] [blog.views:112] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:37:39,962 [Thread-14:139839273240320] [blog.views:112] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:37:40,594 [Thread-20:139838900664064] [blog.views:112] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:37:41,153 [Thread-26:139839273240320] [blog.views:112] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:39:03,923 [Thread-2:140316645447424] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:39:21,658 [Thread-7:140316611876608] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:39:22,727 [Thread-13:140316602697472] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:39:49,526 [Thread-19:140316611876608] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:40:30,349 [Thread-2:140321119889152] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:40:31,151 [Thread-8:140320742307584] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:40:32,023 [Thread-14:140321111496448] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:41:47,891 [Thread-20:140320742307584] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:41:51,878 [Thread-31:140321119889152] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:42:39,635 [Thread-2:139791768680192] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:30,327 [Thread-2:140558165731072] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:32,771 [Thread-8:140558123767552] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:33,532 [Thread-14:140558157338368] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:45,135 [Thread-20:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:45,813 [Thread-26:140558165731072] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:46,436 [Thread-32:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:46,947 [Thread-38:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:47,574 [Thread-44:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:48,082 [Thread-50:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:44:48,482 [Thread-56:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:00,133 [Thread-62:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:00,905 [Thread-68:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:29,242 [Thread-74:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:29,838 [Thread-80:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:30,164 [Thread-85:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:30,457 [Thread-90:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:30,555 [Thread-91:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:31,025 [Thread-97:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:31,342 [Thread-102:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:31,493 [Thread-103:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:31,740 [Thread-108:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:31,974 [Thread-113:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:32,070 [Thread-114:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:32,347 [Thread-118:140558165731072] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:45:32,807 [Thread-125:140558165731072] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:46:13,007 [Thread-130:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:47:53,268 [Thread-152:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 14:59:12,600 [Thread-157:140558148945664] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 15:42:25,104 [Thread-181:140558140552960] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:16:53,080 [Thread-2:139953311160064] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:18:06,068 [Thread-8:139953285981952] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:18:47,776 [Thread-14:139953268147968] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:42:41,078 [Thread-39:139953276540672] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:43:10,665 [Thread-49:139953294374656] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:43:19,553 [Thread-54:139953294374656] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:57:59,942 [Thread-66:139953294374656] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:58:15,761 [Thread-71:139953294374656] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:59:54,234 [Thread-2:140394306643712] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 16:59:56,978 [Thread-9:140394192942848] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 17:00:18,898 [Thread-14:140394192942848] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-24 17:01:01,832 [Thread-36:140394306643712] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-02-25 10:03:15,912 [Thread-29:140048666187520] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 02:20:47,400 [Thread-21:139849688405760] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 02:28:11,938 [Thread-50:139849663227648] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 02:29:13,075 [Thread-61:139849663227648] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 02:40:53,984 [Thread-8:140473482082048] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 02:41:25,920 [Thread-23:140473482082048] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 02:44:01,769 [Thread-28:140473482082048] [blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:25:41,426 [Thread-20:140317761791744] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:25:50,275 [Thread-21:140317761791744] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:25:51,298 [Thread-2:140312230856448] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:25:58,134 [Thread-2:140011137005312] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:25:59,344 [Thread-3:140011128612608] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:26:00,254 [Thread-4:140011120219904] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:26:01,240 [Thread-5:140011111827200] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:26:02,024 [Thread-6:140011111827200] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:26:02,775 [Thread-7:140011111827200] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:26:19,764 [Thread-2:139716827469568] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:05,098 [Thread-16:140479814928128] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:55,831 [Thread-17:140479814928128] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:56,590 [Thread-18:140479804176128] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:57,380 [Thread-19:140479588988672] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:57,956 [Thread-20:140479580595968] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:58,292 [Thread-21:140479572203264] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:58,440 [Thread-22:140479563810560] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:58,516 [Thread-23:140479572203264] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:58,626 [Thread-24:140479580595968] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:33:58,799 [Thread-25:140479580595968] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:34:03,674 [Thread-26:140479580595968] [blog.views:254] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:37:48,573 [Thread-8:140023275759360] [blog.views:253] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 03:39:57,098 [Thread-2:139691166922496] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:39:59,111 [Thread-8:139691166922496] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:39:59,770 [Thread-14:139690783008512] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:16,402 [Thread-20:139691157743360] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:17,196 [Thread-26:139690783008512] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:17,870 [Thread-32:139691157743360] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:18,765 [Thread-37:139691157743360] [blog.views:49] [views:index] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:19,716 [Thread-38:139691157743360] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:23,854 [Thread-43:139691157743360] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:40:29,525 [Thread-49:139690783008512] [blog.views:261] [views:blog] [ERROR]- name 'getPage' is not defined
+2018-03-03 03:51:29,040 [Thread-69:140672574437120] [blog.views:266] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:02:26,226 [Thread-43:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:02:32,325 [Thread-49:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:04:36,810 [Thread-59:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:07:40,037 [Thread-81:140209249306368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:17:10,483 [Thread-90:140209249306368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:17:16,167 [Thread-100:140209249306368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:17:39,767 [Thread-122:140209249306368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:20:34,402 [Thread-127:140209249306368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:22:04,871 [Thread-133:140209232520960] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:22:11,919 [Thread-149:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:22:18,631 [Thread-159:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:22:23,054 [Thread-169:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:23:00,317 [Thread-174:140209240913664] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:23:07,667 [Thread-180:140209274484480] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:30:22,561 [Thread-186:140209249306368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:30:48,698 [Thread-192:140209266091776] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:33:17,667 [Thread-198:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:34:58,446 [Thread-204:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:00,903 [Thread-210:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:14,174 [Thread-216:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:27,600 [Thread-222:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:42,431 [Thread-228:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:58,354 [Thread-234:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:59,370 [Thread-240:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:35:59,962 [Thread-246:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:36:10,411 [Thread-252:140209266091776] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 04:36:23,869 [Thread-258:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 09:07:24,158 [Thread-264:140209266091776] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 09:07:26,050 [Thread-269:140209266091776] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-03 09:07:38,507 [Thread-288:140209257699072] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-09 09:57:11,958 [Thread-22:140300743866112] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-09 09:57:18,052 [Thread-27:140300743866112] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-12 06:09:53,065 [Thread-24:139990944171776] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-12 06:10:32,931 [Thread-85:139990927386368] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-12 06:12:04,630 [Thread-111:139990944171776] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:48:24,624 [Thread-18:139706856236800] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:49:13,092 [Thread-33:139706486482688] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:51:17,832 [Thread-38:139706486482688] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:54:07,386 [Thread-69:139706847319808] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:54:56,745 [Thread-89:139706847319808] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:57:15,088 [Thread-117:139706478089984] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 06:58:48,929 [Thread-131:139706494875392] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 07:03:05,222 [Thread-200:139706469697280] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 07:04:04,568 [Thread-210:139706469697280] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 07:04:09,804 [Thread-219:139706469697280] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-03-19 07:04:17,826 [Thread-229:139706469697280] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-04-14 02:43:29,247 [uWSGIWorker4Core0:140419419664640] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-04-14 02:43:35,724 [uWSGIWorker2Core0:140419419664640] [blog.views:117] [views:article] [ERROR]- 'bool' object is not callable

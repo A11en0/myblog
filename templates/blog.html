@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block main %}
+
+<main id="main">
+
+	<div class="container">
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+                {% for article in article_list %}
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta"> 
+							<span class="posted-on"><time class="entry-date published" date="{{ article.date_publish | date:"Y-m-d" }}">{{ article.date_publish | date:"F j, Y"}}</time></span>
+						</div>
+						<h1 class="entry-title"><a href="{% url "article" %}?id={{ article.id }}" rel="bookmark">{{ article.title }}</a></h1>
+					</header>
+					<div class="entry-content">
+                        <p>{{ article.desc }}</p>
+                    </div>
+				</article>
+                    <hr>
+                {% endfor %}
+			</div>
+		</div>
+
+        <center class="">
+            <div class="pagination">
+                <!-- 如果当前页还有上一页，显示一个上一页的按钮 -->
+                {% if article_list.has_previous %}
+                    <a href="?page={{ article_list.previous_page_number }}">上一页</a>
+                {% endif %}
+                <!-- 显示当前页面信息 -->
+                <span class="current">第 {{ article_list.number }} 页 / 共 {{ article_list.paginator.num_pages }} 页</span>
+                <!-- 如果当前页还有下一页，显示一个下一页的按钮 -->
+                {% if article_list.has_next %}
+                    <a href="?page={{ article_list.next_page_number }}">下一页</a>
+                {% endif %}
+            </div>
+        </center>
+
+    </div>
+</main>
+
+{% endblock %}

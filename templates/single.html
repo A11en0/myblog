@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block main %}
+<main id="main">
+
+	<div class="container">
+		
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta"> 
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">{{ article.date_publish | date:"F j, Y" }}</time></span>
+ 						</div> 
+ 						<h1 class="entry-title"><a href="#" rel="bookmark">{{ article.title }}</a></h1>
+					</header> 
+					<div class="entry-content">
+						{{ article.content | safe }}
+                    </div>
+				</article><!-- #post-## -->
+
+			</div> 
+		</div> <!-- /row post  -->
+                          <h1>{{ comment_num  }}</h1>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+                {% include "comment.html" %}
+                {% include "respond.html" %}
+
+			</div>
+
+		</div> <!-- /row comments -->
+
+		<div class="clearfix"></div>
+
+	</div>	<!-- /container -->
+
+</main>
+{% endblock %}

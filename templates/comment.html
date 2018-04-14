@@ -1,0 +1,40 @@
+{% load staticfiles %}
+          <div id="comments">
+
+              <h3 class="comments-title">{{ comment_num }} Comments</h3>
+              <a href="#comment-form" class="leave-comment">Leave a Comment</a>
+
+              <ol class="commentlist">
+                  {% for comment in comment_list %}
+                      <li id="comment-59418">
+                          <div class="top"><a href='{{ comment.url }}' rel='external nofollow' class='url'>{{ comment.username }}</a><span class="time"> @ <a href="#comment-59418" title="">{{ comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
+                          <div><img alt='' src='{% static 'images/default.jpg' %}' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                          <div class="body">
+                              <p>{{ comment.content }}</p>
+                          </div>
+                      </li>
+                      {% for children_comment in comment.children_comment %}
+                          <li id="comment-59542">
+                              <div class="reply">
+                                  <div class="top"><a href="{{ children_comment.url }}" rel="external nofollow" class="url">{{ children_comment.username }}</a><span class="time"> @ <a href="#comment-59543" title="">{{ children_comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
+                                  <div><img alt="" src="{% static 'images/default.jpg' %}" class="avatar avatar-32 photo" height="32" width="32"></div>
+
+                                  <div class="body">
+                                      {{ children_comment.content }}
+                                  </div>
+                              </div>
+                          </li>
+                      {% endfor %}
+                  {% endfor %}
+              </ol>
+
+
+
+					<div class="clearfix"></div>
+
+					<nav id="comment-nav-below" class="comment-navigation clearfix" role="navigation"><div class="nav-content">
+							<div class="nav-previous">&larr; Older Comments</div>
+							<div class="nav-next">Newer Comments &rarr;</div>
+					</div></nav><!-- #comment-nav-below -->
+
+				</div>
