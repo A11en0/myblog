@@ -7056,3 +7056,34 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [
 2018-04-14 05:10:32,398 [uWSGIWorker3Core0:139767545348352] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
 2018-04-14 05:10:32,409 [uWSGIWorker3Core0:139767545348352] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
 2018-04-14 05:10:32,411 [uWSGIWorker3Core0:139767545348352] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-14 05:21:49,133 [Dummy-1:140041477617408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.053) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-14 05:21:49,186 [Dummy-1:140041477617408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.052) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-14 05:21:49,245 [Dummy-1:140041477617408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SELECT VERSION(); args=None
+2018-04-14 05:21:49,554 [Dummy-1:140041477617408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.043) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-14 05:21:49,596 [Dummy-1:140041477617408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SHOW FULL TABLES; args=None
+2018-04-14 05:21:49,640 [Dummy-1:140041477617408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-14 05:21:51,306 [Thread-2:140041465743104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-14 05:21:51,348 [Thread-2:140041465743104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-14 05:21:51,390 [Thread-2:140041465743104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
+2018-04-14 05:21:51,434 [Thread-2:140041465743104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-14 05:21:51,477 [Thread-2:140041465743104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-14 05:21:51,489 [Thread-2:140041465743104] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 4064
+2018-04-14 05:23:18,982 [Thread-8:140041217103616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-14 05:23:19,030 [Thread-8:140041217103616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-14 05:23:19,076 [Thread-8:140041217103616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
+2018-04-14 05:23:19,123 [Thread-8:140041217103616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-14 05:23:19,175 [Thread-8:140041217103616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-14 05:23:19,179 [Thread-8:140041217103616] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 4064
+2018-04-14 05:23:19,727 [Thread-9:140041233889024] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 404 1708
+2018-04-14 05:23:20,371 [Thread-10:140041448957696] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-14 05:23:20,423 [Thread-10:140041448957696] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-14 05:23:20,476 [Thread-10:140041448957696] [django.db.backends:111] [utils:execute] [DEBUG]- (0.052) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
+2018-04-14 05:23:20,528 [Thread-10:140041448957696] [django.db.backends:111] [utils:execute] [DEBUG]- (0.050) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-14 05:23:20,582 [Thread-10:140041448957696] [django.db.backends:111] [utils:execute] [DEBUG]- (0.053) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-14 05:23:20,584 [Thread-10:140041448957696] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 4064
+2018-04-14 05:23:21,610 [Thread-11:140041457350400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-14 05:23:21,658 [Thread-11:140041457350400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-14 05:23:21,704 [Thread-11:140041457350400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
+2018-04-14 05:23:21,753 [Thread-11:140041457350400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-14 05:23:21,800 [Thread-11:140041457350400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-14 05:23:21,803 [Thread-11:140041457350400] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 4064

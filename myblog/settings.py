@@ -91,8 +91,8 @@ DATABASES = {
         'NAME': 'blogdb',
         'USER' : 'django',
         'PASSWORD'  : 'gyh201727',
-        'HOST' : '',
-        'PORT' : '',
+        'HOST' : '120.77.251.209',
+        'PORT' : '3306',
 
     }
 }
