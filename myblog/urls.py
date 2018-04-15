@@ -22,8 +22,8 @@ from blog.upload import upload_image
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #re_path(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT, }),
-    #re_path(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
+    re_path(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT, }),
+    re_path(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
     re_path('', include('blog.urls')),
     re_path(r'^comment/post/$', comment_post, name='comment_post'),
     re_path(r'^logout$', do_logout, name='logout'),

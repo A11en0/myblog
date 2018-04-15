@@ -6,7 +6,7 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnIn
 from django.db.models.aggregates import Count
 from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.hashers import make_password
-from  .forms import CommentForm
+from  .forms import *
 from django.views.generic import ListView
 
 
@@ -86,13 +86,15 @@ def article(request):
     try:
         # 获取文章id
         id = request.GET.get('id', None)
-        print(id+"okjb")
         try:
             # 获取文章信息
             article = Article.objects.get(id=id)
         except Article.DoesNotExist:
             return render(request, 'failure.html', {'reason': '没有找到对应的文章'})
 
+
+        # 评论表单
+        comment_form = CommentForm({'article':id})
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article).order_by('id')
@@ -125,26 +127,31 @@ def comment_post(request):
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
             # 获取表单信息
+            '''
             comment = Comment.objects.create(username=comment_form.cleaned_data["author"],
                                              email=comment_form.cleaned_data["email"],
                                              url=comment_form.cleaned_data["url"],
                                              content=comment_form.cleaned_data["comment"],
                                              article_id=comment_form.cleaned_data["article"],
                                              user=request.user if request.user.is_authenticated() else None)
+            '''
+            comment = Comment.objects.create(
+                content=comment_form.cleaned_data["comment"],
+                article_id=comment_form.cleaned_data["article"],
+                user=request.user)
             comment.save()
+            print("okkkk!")
         else:
             return render(request, 'failure.html', {'reason': comment_form.errors})
     except Exception as e:
         logging.error(e)
     return redirect(request.META['HTTP_REFERER'])
 
-
 # 注销
 def do_logout(request):
     try:
         logout(request)
     except Exception as e:
-        #print e
         logging.error(e)
     return redirect(request.META['HTTP_REFERER'])
 
@@ -165,7 +172,8 @@ def do_reg(request):
                 # 登录
                 user.backend = 'django.contrib.auth.backends.ModelBackend'  # 指定默认的登录验证方式
                 login(request, user)
-                return redirect(request.POST.get('source_url'))
+                #return redirect(request.POST.get('source_url'))
+                return HttpResponse("注册成功！")
             else:
                 return render(request, 'failure.html', {'reason': reg_form.errors})
         else:

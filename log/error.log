@@ -425,3 +425,5 @@
 2018-04-14 10:46:03,909 [Thread-32:140161013245696] [blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
 2018-04-14 10:51:58,255 [Thread-37:140161013245696] [blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
 2018-04-14 10:54:30,351 [Thread-51:140160979412736] [blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-04-14 13:07:39,077 [Thread-2:140262457280256] [blog.views:124] [views:article] [ERROR]- 'bool' object is not callable
+2018-04-14 13:12:19,700 [Thread-2:139767698159360] [blog.views:123] [views:article] [ERROR]- 'bool' object is not callable

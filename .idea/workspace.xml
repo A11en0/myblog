@@ -5,8 +5,369 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8885af4f-2293-4668-b437-2b78b269fa6f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/assets/css/comment.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/assets/css/reglogin.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/assets/images/default.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/config_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/reg.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/blog/forms.py" afterPath="$PROJECT_DIR$/blog/forms.py" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/autocomplete.css" afterPath="$PROJECT_DIR$/static/admin/css/autocomplete.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/base.css" afterPath="$PROJECT_DIR$/static/admin/css/base.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/changelists.css" afterPath="$PROJECT_DIR$/static/admin/css/changelists.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/dashboard.css" afterPath="$PROJECT_DIR$/static/admin/css/dashboard.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/fonts.css" afterPath="$PROJECT_DIR$/static/admin/css/fonts.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/forms.css" afterPath="$PROJECT_DIR$/static/admin/css/forms.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/login.css" afterPath="$PROJECT_DIR$/static/admin/css/login.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/responsive.css" afterPath="$PROJECT_DIR$/static/admin/css/responsive.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/responsive_rtl.css" afterPath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/rtl.css" afterPath="$PROJECT_DIR$/static/admin/css/rtl.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/vendor/select2/LICENSE-SELECT2.md" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/LICENSE-SELECT2.md" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/vendor/select2/select2.css" afterPath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/vendor/select2/select2.min.css" afterPath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.min.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/css/widgets.css" afterPath="$PROJECT_DIR$/static/admin/css/widgets.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/fonts/README.txt" afterPath="$PROJECT_DIR$/static/admin/fonts/README.txt" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/fonts/Roboto-Bold-webfont.woff" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/fonts/Roboto-Light-webfont.woff" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/fonts/Roboto-Regular-webfont.woff" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/LICENSE" afterPath="$PROJECT_DIR$/static/admin/img/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/README.txt" afterPath="$PROJECT_DIR$/static/admin/img/README.txt" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/calendar-icons.svg" afterPath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/gis/move_vertex_off.svg" afterPath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/gis/move_vertex_on.svg" afterPath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-addlink.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-alert.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-calendar.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-changelink.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-clock.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-deletelink.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-no.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-no.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-unknown-alt.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-unknown.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/icon-yes.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/inline-delete.svg" afterPath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/search.svg" afterPath="$PROJECT_DIR$/static/admin/img/search.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/selector-icons.svg" afterPath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/sorting-icons.svg" afterPath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/tooltag-add.svg" afterPath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/img/tooltag-arrowright.svg" afterPath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/static/admin/js/SelectBox.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/actions.js" afterPath="$PROJECT_DIR$/static/admin/js/actions.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/static/admin/js/actions.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/autocomplete.js" afterPath="$PROJECT_DIR$/static/admin/js/autocomplete.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/calendar.js" afterPath="$PROJECT_DIR$/static/admin/js/calendar.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/cancel.js" afterPath="$PROJECT_DIR$/static/admin/js/cancel.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/change_form.js" afterPath="$PROJECT_DIR$/static/admin/js/change_form.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/collapse.js" afterPath="$PROJECT_DIR$/static/admin/js/collapse.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/static/admin/js/collapse.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/core.js" afterPath="$PROJECT_DIR$/static/admin/js/core.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/inlines.js" afterPath="$PROJECT_DIR$/static/admin/js/inlines.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/static/admin/js/inlines.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/jquery.init.js" afterPath="$PROJECT_DIR$/static/admin/js/jquery.init.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/popup_response.js" afterPath="$PROJECT_DIR$/static/admin/js/popup_response.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/prepopulate.min.js" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/prepopulate_init.js" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/timeparse.js" afterPath="$PROJECT_DIR$/static/admin/js/timeparse.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/urlify.js" afterPath="$PROJECT_DIR$/static/admin/js/urlify.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/LICENSE-SELECT2.md" afterPath="$PROJECT_DIR$/static/admin/css/vendor/select2/LICENSE-SELECT2.md" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ar.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ar.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/az.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/az.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/bg.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/bg.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ca.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ca.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/cs.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/cs.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/da.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/da.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/de.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/de.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/el.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/el.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/en.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/en.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/es.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/es.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/et.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/et.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/eu.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/eu.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/fa.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fa.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/fi.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fi.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/fr.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fr.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/gl.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/gl.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/he.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/he.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/hi.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hi.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/hr.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hr.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/hu.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hu.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/id.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/id.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/is.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/is.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/it.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/it.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ja.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ja.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/km.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/km.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ko.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ko.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/lt.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lt.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/lv.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lv.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/mk.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/mk.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ms.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ms.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/nb.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nb.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/nl.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nl.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/pl.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pl.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/pt-BR.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt-BR.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/pt.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ro.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ro.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/ru.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ru.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/sk.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sk.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/sr.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/sv.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sv.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/th.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/th.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/tr.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/tr.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/uk.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/uk.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/vi.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/vi.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/zh-CN.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-CN.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/i18n/zh-TW.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-TW.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/select2.full.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/select2/select2.full.min.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/xregexp/xregexp.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/js/vendor/xregexp/xregexp.min.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/css/styles.css" afterPath="$PROJECT_DIR$/static/assets/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/avatar_man.png" afterPath="$PROJECT_DIR$/static/assets/images/avatar_man.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/avatar_woman.png" afterPath="$PROJECT_DIR$/static/assets/images/avatar_woman.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/bg_head.jpg" afterPath="$PROJECT_DIR$/static/assets/images/bg_head.jpg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/gt_favicon.png" afterPath="$PROJECT_DIR$/static/assets/images/gt_favicon.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/guy.jpg" afterPath="$PROJECT_DIR$/static/assets/images/guy.jpg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/mac.jpg" afterPath="$PROJECT_DIR$/static/assets/images/mac.jpg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/s1.jpg" afterPath="$PROJECT_DIR$/static/assets/images/s1.jpg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/s2.jpg" afterPath="$PROJECT_DIR$/static/assets/images/s2.jpg" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/images/sample_clients.png" afterPath="$PROJECT_DIR$/static/assets/images/sample_clients.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/html5shiv.js" afterPath="$PROJECT_DIR$/static/assets/js/html5shiv.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/static/assets/js/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/config.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/config.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/kindeditor-all-min.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/kindeditor-all-min.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/kindeditor-all.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/kindeditor-all.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/lang/ar.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/lang/ar.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/lang/en.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/lang/en.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/lang/ko.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/lang/ko.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/lang/ru.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/lang/ru.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/lang/zh-CN.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/lang/zh-CN.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/lang/zh-TW.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/lang/zh-TW.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/license.txt" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/license.txt" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/anchor/anchor.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/anchor/anchor.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/autoheight/autoheight.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/autoheight/autoheight.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/baidumap/baidumap.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/baidumap/baidumap.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/baidumap/index.html" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/baidumap/index.html" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/baidumap/map.html" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/baidumap/map.html" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/clearhtml/clearhtml.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/clearhtml/clearhtml.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/code/code.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/code/code.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/code/prettify.css" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/code/prettify.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/code/prettify.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/code/prettify.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/emoticons.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/emoticons.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/0.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/0.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/1.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/1.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/10.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/10.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/100.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/100.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/101.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/101.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/102.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/102.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/103.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/103.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/104.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/104.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/105.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/105.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/106.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/106.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/107.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/107.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/108.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/108.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/109.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/109.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/11.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/11.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/110.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/110.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/111.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/111.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/112.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/112.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/113.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/113.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/114.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/114.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/115.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/115.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/116.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/116.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/117.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/117.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/118.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/118.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/119.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/119.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/12.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/12.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/120.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/120.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/121.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/121.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/122.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/122.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/123.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/123.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/124.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/124.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/125.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/125.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/126.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/126.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/127.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/127.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/128.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/128.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/129.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/129.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/13.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/13.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/130.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/130.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/131.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/131.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/132.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/132.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/133.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/133.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/134.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/134.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/14.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/14.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/15.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/15.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/16.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/16.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/17.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/17.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/18.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/18.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/19.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/19.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/2.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/2.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/20.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/20.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/21.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/21.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/22.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/22.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/23.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/23.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/24.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/24.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/25.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/25.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/26.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/26.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/27.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/27.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/28.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/28.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/29.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/29.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/3.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/3.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/30.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/30.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/31.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/31.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/32.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/32.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/33.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/33.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/34.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/34.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/35.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/35.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/36.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/36.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/37.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/37.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/38.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/38.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/39.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/39.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/4.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/4.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/40.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/40.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/41.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/41.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/42.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/42.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/43.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/43.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/44.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/44.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/45.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/45.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/46.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/46.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/47.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/47.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/48.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/48.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/49.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/49.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/5.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/5.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/50.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/50.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/51.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/51.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/52.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/52.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/53.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/53.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/54.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/54.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/55.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/55.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/56.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/56.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/57.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/57.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/58.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/58.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/59.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/59.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/6.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/6.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/60.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/60.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/61.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/61.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/62.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/62.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/63.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/63.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/64.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/64.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/65.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/65.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/66.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/66.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/67.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/67.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/68.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/68.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/69.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/69.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/7.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/7.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/70.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/70.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/71.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/71.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/72.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/72.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/73.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/73.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/74.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/74.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/75.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/75.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/76.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/76.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/77.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/77.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/78.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/78.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/79.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/79.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/8.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/8.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/80.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/80.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/81.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/81.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/82.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/82.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/83.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/83.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/84.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/84.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/85.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/85.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/86.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/86.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/87.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/87.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/88.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/88.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/89.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/89.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/9.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/9.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/90.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/90.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/91.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/91.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/92.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/92.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/93.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/93.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/94.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/94.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/95.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/95.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/96.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/96.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/97.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/97.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/98.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/98.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/99.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/99.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/emoticons/images/static.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/emoticons/images/static.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/filemanager/filemanager.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/filemanager/filemanager.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/filemanager/images/file-16.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/filemanager/images/file-16.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/filemanager/images/file-64.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/filemanager/images/file-64.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/filemanager/images/folder-16.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/filemanager/images/folder-16.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/filemanager/images/folder-64.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/filemanager/images/folder-64.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/filemanager/images/go-up.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/filemanager/images/go-up.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/fixtoolbar/fixtoolbar.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/fixtoolbar/fixtoolbar.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/flash/flash.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/flash/flash.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/image/image.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/image/image.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/image/images/align_left.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/image/images/align_left.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/image/images/align_right.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/image/images/align_right.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/image/images/align_top.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/image/images/align_top.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/image/images/refresh.png" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/image/images/refresh.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/insertfile/insertfile.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/insertfile/insertfile.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/lineheight/lineheight.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/lineheight/lineheight.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/link/link.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/link/link.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/map/map.html" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/map/map.html" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/map/map.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/map/map.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/media/media.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/media/media.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/multiimage/images/image.png" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/multiimage/images/image.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/multiimage/images/select-files-en.png" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/multiimage/images/select-files-en.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/multiimage/images/select-files-zh-CN.png" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/multiimage/images/select-files-zh-CN.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/multiimage/images/swfupload.swf" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/multiimage/images/swfupload.swf" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/multiimage/multiimage.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/multiimage/multiimage.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/pagebreak/pagebreak.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/pagebreak/pagebreak.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/plainpaste/plainpaste.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/plainpaste/plainpaste.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/preview/preview.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/preview/preview.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/quickformat/quickformat.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/quickformat/quickformat.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/table/table.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/table/table.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/template/html/1.html" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/template/html/1.html" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/template/html/2.html" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/template/html/2.html" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/template/html/3.html" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/template/html/3.html" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/template/template.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/template/template.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/plugins/wordpaste/wordpaste.js" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/plugins/wordpaste/wordpaste.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/common/anchor.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/common/anchor.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/common/blank.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/common/blank.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/common/flash.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/common/flash.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/common/loading.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/common/loading.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/common/media.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/common/media.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/common/rm.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/common/rm.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/default/background.png" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/default/background.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/default/default.css" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/default/default.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/default/default.png" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/default/default.png" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/qq/editor.gif" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/qq/editor.gif" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/qq/qq.css" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/qq/qq.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/kindeditor/themes/simple/simple.css" afterPath="$PROJECT_DIR$/static/assets/js/kindeditor/themes/simple/simple.css" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/js/template.js" afterPath="$PROJECT_DIR$/static/assets/js/template.js" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/less/3rd-party/bootstrap/mixins.less" afterPath="$PROJECT_DIR$/static/assets/less/3rd-party/bootstrap/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/less/3rd-party/lesshat.less" afterPath="$PROJECT_DIR$/static/assets/less/3rd-party/lesshat.less" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/less/mixins.less" afterPath="$PROJECT_DIR$/static/assets/less/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/less/navbar.less" afterPath="$PROJECT_DIR$/static/assets/less/navbar.less" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/assets/less/styles.less" afterPath="$PROJECT_DIR$/static/assets/less/styles.less" />
       <change beforePath="$PROJECT_DIR$/log/all.log" afterPath="$PROJECT_DIR$/log/all.log" />
+      <change beforePath="$PROJECT_DIR$/log/all.log.1" afterPath="$PROJECT_DIR$/log/all.log.1" />
+      <change beforePath="$PROJECT_DIR$/log/all.log.2" afterPath="$PROJECT_DIR$/log/all.log.2" />
+      <change beforePath="$PROJECT_DIR$/log/all.log.3" afterPath="$PROJECT_DIR$/log/all.log.3" />
+      <change beforePath="$PROJECT_DIR$/log/all.log.4" afterPath="$PROJECT_DIR$/log/all.log.4" />
+      <change beforePath="$PROJECT_DIR$/log/all.log.5" afterPath="$PROJECT_DIR$/log/all.log.5" />
+      <change beforePath="$PROJECT_DIR$/log/error.log" afterPath="$PROJECT_DIR$/log/error.log" />
+      <change beforePath="$PROJECT_DIR$/log/script.log" afterPath="$PROJECT_DIR$/log/script.log" />
+      <change beforePath="$PROJECT_DIR$/myblog/settings.py" afterPath="$PROJECT_DIR$/myblog/settings.py" />
+      <change beforePath="$PROJECT_DIR$/myblog/urls.py" afterPath="$PROJECT_DIR$/myblog/urls.py" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/comment.html" afterPath="$PROJECT_DIR$/templates/comment.html" />
+      <change beforePath="$PROJECT_DIR$/templates/respond.html" afterPath="$PROJECT_DIR$/templates/respond.html" />
+      <change beforePath="$PROJECT_DIR$/templates/single.html" afterPath="$PROJECT_DIR$/templates/single.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,34 +381,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <file leaf-file-name="respond.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/respond.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="116" column="79" lean-forward="false" selection-start-line="116" selection-start-column="79" selection-end-line="116" selection-end-column="79" />
+            <state relative-caret-position="198">
+              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/assets/js/kindeditor/config_1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="e#14#42#0" expanded="true" />
+                <element signature="e#23#47#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myblog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -55,31 +416,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2403">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="145" column="26" lean-forward="false" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="single.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/single.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="60" column="57" lean-forward="false" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -97,9 +438,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
-      <find>c</find>
-      <find>ArticleMa</find>
       <find>data</find>
       <find>for</find>
       <find>p</find>
@@ -112,7 +450,6 @@
       <find>id</find>
       <find>GYH</find>
       <find>Home</find>
-      <find>ok</find>
       <find>article_list</find>
       <find>COMMENT_ENTRY</find>
       <find>MEDIA</find>
@@ -124,6 +461,13 @@
       <find>okjb</find>
       <find>temp</find>
       <find>jque</find>
+      <find>HTTP</find>
+      <find>sou</find>
+      <find>children</find>
+      <find>ok</find>
+      <find>okk</find>
+      <find>MED</find>
+      <find>okkk</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,25 +501,28 @@
         <option value="$PROJECT_DIR$/templates/baseblock/cloud.html" />
         <option value="$PROJECT_DIR$/templates/baseblock/links.html" />
         <option value="$PROJECT_DIR$/templates_bak/baseblock/pagination.html" />
-        <option value="$PROJECT_DIR$/templates/failure.html" />
-        <option value="$PROJECT_DIR$/blog/admin.py" />
-        <option value="$PROJECT_DIR$/static/assets/js/kindeditor/config.js" />
-        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/templates_bak/article.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/blog/forms.py" />
-        <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/templates/blog.html" />
         <option value="$PROJECT_DIR$/easy_comment/models.py" />
-        <option value="$PROJECT_DIR$/myblog/settings.py" />
-        <option value="$PROJECT_DIR$/myblog/urls.py" />
-        <option value="$PROJECT_DIR$/templates/comment.html" />
-        <option value="$PROJECT_DIR$/templates/respond.html" />
-        <option value="$PROJECT_DIR$/blog/views.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/single.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/myblog/settings.py" />
+        <option value="$PROJECT_DIR$/templates/failure.html" />
+        <option value="$PROJECT_DIR$/blog/urls.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/reg.html" />
+        <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/templates/comment.html" />
+        <option value="$PROJECT_DIR$/blog/forms.py" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
+        <option value="$PROJECT_DIR$/blog/admin.py" />
+        <option value="$PROJECT_DIR$/myblog/urls.py" />
+        <option value="$PROJECT_DIR$/templates/respond.html" />
+        <option value="$PROJECT_DIR$/static/assets/js/kindeditor/config_1.js" />
+        <option value="$PROJECT_DIR$/static/assets/js/kindeditor/config.js" />
       </list>
     </option>
   </component>
@@ -186,10 +533,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="830" />
-    <option name="y" value="71" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="x" value="796" />
+    <option name="y" value="192" />
+    <option name="width" value="1910" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -206,6 +553,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -217,13 +565,43 @@
             <path>
               <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="collectstatic" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="kindeditor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,18 +614,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/collectstatic/assets/css" />
+      <recent name="$PROJECT_DIR$/collectstatic/assets/images" />
+      <recent name="$PROJECT_DIR$/collectstatic/assets" />
       <recent name="$PROJECT_DIR$/blog" />
       <recent name="$PROJECT_DIR$/blog/migrations" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/templates_bak" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/collectstatic/images" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static/assets/css" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/static/assets/js" />
-      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/collectstatic/assets/images" />
+      <recent name="$PROJECT_DIR$/collectstatic" />
+      <recent name="$PROJECT_DIR$/collectstatic/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,6 +643,7 @@
   <component name="RunManager" selected="Django server.myblog">
     <configuration name="base.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/myblog/templates_bak/base.html" />
     <configuration name="blog.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/myblog/templates/blog.html" />
+    <configuration name="comment.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/myblog/templates/comment.html" />
     <configuration name="failure.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/myblog/templates/failure.html" />
     <configuration name="single.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/myblog/templates/single.html" />
     <configuration name="myblog" type="Python.DjangoServer" factoryName="Django server">
@@ -290,19 +669,21 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.myblog" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.failure.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.single.html" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.blog.html" />
       <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.comment.html" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.single.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.blog.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.failure.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.comment.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.single.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.blog.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.failure.html" />
       </list>
     </recent_temporary>
   </component>
@@ -333,42 +714,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3383546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29548088" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20452099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3383546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2964989" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20452099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3383546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29548088" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25941873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,59 +755,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/styles.css" />
-    <entry file="file://$PROJECT_DIR$/static/assets/js/template.js" />
-    <entry file="file://$PROJECT_DIR$/templates/pagination.html" />
-    <entry file="file://$PROJECT_DIR$/templates_bak/baseblock/archive_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates_bak/archive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates_bak/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="44" column="36" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates_bak/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index_bak.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8060">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates_bak/baseblock/pagination.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/assets/js/kindeditor/asp/demo.asp" />
-    <entry file="file://$PROJECT_DIR$/static/assets/js/kindeditor/config.js" />
-    <entry file="file://$PROJECT_DIR$/static/single.html" />
     <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -460,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/upload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -478,13 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -512,25 +819,10 @@
     <entry file="file://$PROJECT_DIR$/easy_comment/static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js" />
     <entry file="file://$PROJECT_DIR$/online_status/apps.py" />
     <entry file="file://$PROJECT_DIR$/online_status/models.py" />
-    <entry file="file://$PROJECT_DIR$/myblog/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/easy_comment/models.py" />
     <entry file="file://$PROJECT_DIR$/easy_comment/templates/easy_comment/comment.html" />
     <entry file="file://$PROJECT_DIR$/easy_comment/forms.py" />
     <entry file="file://$PROJECT_DIR$/easy_comment/views.py" />
-    <entry file="file://$PROJECT_DIR$/myblog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5412">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/myblog/lib/python3.5/site-packages/django/template/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -539,76 +831,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/respond.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="116" column="79" lean-forward="false" selection-start-line="116" selection-start-column="79" selection-end-line="116" selection-end-column="79" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/images/avatar_man.png">
+    <entry file="file://$PROJECT_DIR$/static/assets/images/avatar_man.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/images/bg_head.jpg">
+    <entry file="file://$PROJECT_DIR$/static/assets/images/bg_head.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/images/gt_favicon.png">
+    <entry file="file://$PROJECT_DIR$/static/assets/images/gt_favicon.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/images/guy.jpg">
+    <entry file="file://$PROJECT_DIR$/static/assets/images/guy.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/images/avatar_woman.png">
+    <entry file="file://$PROJECT_DIR$/static/assets/images/avatar_woman.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/images/sample_clients.png">
+    <entry file="file://$PROJECT_DIR$/static/assets/images/sample_clients.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collectstatic/images/default.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/assets/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/images/default.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/failure.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="231">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myblog/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/css/reglogin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/css/comment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,51 +964,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/kindeditor/2018/2/6e555f62-16d4-11e8-b631-80a5893f817f.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/kindeditor/2018/2/6755701c-16d4-11e8-b631-80a5893f817f.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/avatar/2018/02/20150902023202426.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/avatar/2018/02/images.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/upload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#73#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myblog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myblog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="417">
+          <caret line="25" column="76" lean-forward="true" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding>
+            <element signature="e#630#662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2094">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2403">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="594">
+          <caret line="145" column="26" lean-forward="false" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectstatic/assets/js/template.js">
+    <entry file="file://$PROJECT_DIR$/static/assets/js/kindeditor/config_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/single.html">
+    <entry file="file://$PROJECT_DIR$/static/assets/js/kindeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="60" column="57" lean-forward="false" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
+        <state relative-caret-position="231">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/respond.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -27,35 +27,7 @@
 			<div class="col-sm-8 col-sm-offset-2">
 
                 {% include "respond.html" %}
-
-
-        <div id="comments">
-              <h3 class="comments-title">{{ comment_num }} Comments</h3>
-            <ul class="comment-list list-unstyled">
-                  {% for comment in comment_list %}
-
-                    <li class="comment-item">
-                          <div class="top"><a href='{{ comment.url }}' rel='external nofollow' class='url'>{{ comment.username }}</a><span class="time"> @ <a href="#comment-59418" title="">{{ comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
-                          <div><img alt='' src='{% static 'assets/images/guy.jpg' %}' class='avatar avatar-32 photo' height='32' width='32' /></div>
-                          <div class="body"><p>{{ comment.content }}</p></div>
-                      </li>
-
-                      {% for children_comment in comment.children_comment %}
-                    <li class="comment-item">
-                              <div class="reply">
-                                  <div class="top"><a href="{{ children_comment.url }}" rel="external nofollow" class="url">{{ children_comment.username }}</a><span class="time"> @ <a href="#comment-59543" title="">{{ children_comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
-                                  <div><img alt="" src="{% static 'images/default.jpg' %}" class="avatar avatar-32 photo" height="32" width="32"></div>
-                                  <div class="body">{{ children_comment.content }}</div>
-                              </div>
-                          </li>
-                      {% endfor %}
-
-                      {% empty %}
-                      <div>暂无评论</div>
-                  {% endfor %}
-
-            </ul>
-        </div>
+                {% include "comment.html" %}
 
 					<div class="clearfix"></div>
 					<nav id="comment-nav-below" class="comment-navigation clearfix" role="navigation"><div class="nav-content">

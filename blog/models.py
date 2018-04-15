@@ -111,6 +111,21 @@ class Article(models.Model):
 # 评论(comment)模型
 class Comment(models.Model):
     content = models.TextField(verbose_name='评论内容')
+    date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
+
+    user = models.ForeignKey(User,null=True, verbose_name='用户',  on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, null=True, verbose_name='文章',  on_delete=models.CASCADE)
+    pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论',  on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = '评论'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return str(self.content)
+'''
+class Comment(models.Model):
+    content = models.TextField(verbose_name='评论内容')
     username = models.CharField(max_length=30, blank=True, null=True, verbose_name='用户名')
     email = models.EmailField(max_length=50, blank=True, null=True, verbose_name='邮箱地址')
     url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
@@ -126,7 +141,7 @@ class Comment(models.Model):
 
     def __str__(self):
         return str(self.content)
-
+'''
 
 # 友情链接(links)模型
 class Links(models.Model):

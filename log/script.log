@@ -17004,3 +17004,330 @@ django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'if'. Lo
 2018-04-14 11:23:56,050 [Thread-7:139622868838144] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
 2018-04-14 11:28:39,333 [Thread-14:139623232784128] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/jquery.min.js
 2018-04-14 11:28:45,145 [Thread-15:139623249569536] [django.request:93] [base:get_response] [WARNING]- Not Found: /article/static/assets/js/template.js
+2018-04-14 12:55:38,450 [Thread-3:140386534287104] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 200, in do_login
+    return render(request, 'login.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2018-04-14 13:42:38,152 [Thread-8:140712100464384] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /reg
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 185, in do_reg
+    return render(request, 'reg.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: reg.html
+2018-04-14 14:05:56,140 [Thread-48:140536332957440] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:06:08,562 [Thread-49:140536332957440] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/add/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:06:44,868 [Thread-2:139736370091776] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:07:08,719 [Thread-2:140674137585408] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:07:38,024 [Thread-3:140674137585408] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:10:41,328 [Thread-4:140674137585408] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:10:45,044 [Thread-5:140674137585408] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:10:52,619 [Thread-6:140674137585408] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:10:52,798 [Thread-7:140674129192704] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:11:12,980 [Thread-8:140674129192704] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/allen/Django/myblog/blog/views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in globals_setting
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/Django/myblog/blog/views.py", line 35, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+blog.models.DoesNotExist: Article matching query does not exist.
+2018-04-14 14:54:25,758 [Thread-49:139750895740672] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
