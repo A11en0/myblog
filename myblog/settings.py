@@ -135,12 +135,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'collectstatic')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+        os.path.join(BASE_DIR, 'static'),]
+
 
 MEDIA_URL = '/uploads/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
 # 自定义用户model
@@ -149,11 +149,11 @@ AUTH_USER_MODEL = 'blog.User'
 # 网站基本信息配置
 SITE_URL = 'http://localhost:8000/'
 SITE_NAME = u"A11en0's Blog"
-SITE_DESC = u'风清扬&笑傲江湖'
+SITE_DESC = u''
 WEIBO_SINA = u'http://weibo.com/'
 WEIBO_TENCENT = u'http://weibo.com/'
 PRO_RSS = u'http://weibo.com/'
-PRO_EMAIL = u'xajh@qq.com'
+PRO_EMAIL = u''
 
 # 自定义日志输出信息
 LOGGING = {
