@@ -17331,4 +17331,47 @@ Traceback (most recent call last):
     self.model._meta.object_name
 blog.models.DoesNotExist: Article matching query does not exist.
 2018-04-14 14:54:25,758 [Thread-49:139750895740672] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+<<<<<<< HEAD
 2018-04-15 07:44:20,341 [Thread-38:139934572726016] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+=======
+2018-04-15 06:56:45,127 [uWSGIWorker4Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/sidebar-left.html
+2018-04-15 06:56:48,376 [uWSGIWorker3Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/sidebar-right.html
+2018-04-15 06:56:53,853 [uWSGIWorker4Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/single.html
+2018-04-15 07:04:28,321 [uWSGIWorker4Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-04-15 07:04:33,674 [uWSGIWorker3Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-04-15 07:31:10,839 [uWSGIWorker4Core0:139769622606080] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 156, in do_logout
+    return redirect(request.META['HTTP_REFERER'])
+KeyError: 'HTTP_REFERER'
+2018-04-15 07:31:59,849 [uWSGIWorker3Core0:139769622606080] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 156, in do_logout
+    return redirect(request.META['HTTP_REFERER'])
+KeyError: 'HTTP_REFERER'
+2018-04-15 07:32:27,875 [uWSGIWorker4Core0:139769622606080] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /logout
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 156, in do_logout
+    return redirect(request.META['HTTP_REFERER'])
+KeyError: 'HTTP_REFERER'
+2018-04-15 08:28:38,311 [uWSGIWorker1Core0:139794044150016] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-04-15 08:28:46,357 [uWSGIWorker1Core0:139794044150016] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+>>>>>>> origin/newsite

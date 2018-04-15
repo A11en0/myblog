@@ -427,3 +427,4 @@
 2018-04-14 10:54:30,351 [Thread-51:140160979412736] [blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
 2018-04-14 13:07:39,077 [Thread-2:140262457280256] [blog.views:124] [views:article] [ERROR]- 'bool' object is not callable
 2018-04-14 13:12:19,700 [Thread-2:139767698159360] [blog.views:123] [views:article] [ERROR]- 'bool' object is not callable
+2018-04-15 06:48:34,620 [uWSGIWorker3Core0:139769622606080] [blog.views:113] [views:article] [ERROR]- invalid literal for int() with base 10: '1/admin'
