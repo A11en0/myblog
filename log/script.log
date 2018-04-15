@@ -17331,6 +17331,7 @@ Traceback (most recent call last):
     self.model._meta.object_name
 blog.models.DoesNotExist: Article matching query does not exist.
 2018-04-14 14:54:25,758 [Thread-49:139750895740672] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+<<<<<<< HEAD
 2018-04-15 06:56:45,127 [uWSGIWorker4Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/sidebar-left.html
 2018-04-15 06:56:48,376 [uWSGIWorker3Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/sidebar-right.html
 2018-04-15 06:56:53,853 [uWSGIWorker4Core0:139769622606080] [django.request:93] [base:get_response] [WARNING]- Not Found: /blog/single.html
@@ -17426,3 +17427,6 @@ KeyError: 'HTTP_REFERER'
 2018-04-15 13:05:49,073 [uWSGIWorker4Core0:139794044150016] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2018-04-15 13:08:13,643 [uWSGIWorker1Core0:139794044150016] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2018-04-15 13:09:46,167 [uWSGIWorker4Core0:139794044150016] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/code-bk.png
+=======
+2018-04-15 07:44:20,341 [Thread-38:139934572726016] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+>>>>>>> origin/master
