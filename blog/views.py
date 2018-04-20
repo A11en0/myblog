@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse,render_to_response
 import logging
 from django.conf import settings
 from blog.models import *
@@ -9,9 +9,7 @@ from django.contrib.auth.hashers import make_password
 from  .forms import *
 from django.views.generic import ListView
 
-
 logger = logging.getLogger('blog.views')
-
 
 # Create your views here.
 def globals_setting(request):
@@ -49,8 +47,8 @@ def index(request):
         logger.error(e)
     return render(request, 'index.html', locals())
 
-def about(request):
-    try:
+def about(request): 
+    try: 
         pass
     except Exception as e:
         logger.error(e)
@@ -207,8 +205,8 @@ def do_login(request):
         logging.error(e)
     return render(request, 'login.html', locals())
 
+def page_not_found(request):
+    return render(request,'404.html')
 
-
-
-
-
+def page_error(request):
+    return render(request,'500.html')
