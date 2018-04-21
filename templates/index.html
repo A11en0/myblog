@@ -1,14 +1,87 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 {% block main %}
+    <!-- css -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/highlights/github.css' %}">
+    <style>
+        span.highlighted {
+            color: black;
+        }
+    </style>
 
-<main id="main">
+<div class="content-body">
+    <div class="container">
+        <div class="row">
 
-	<div class="container">
-        <h2><em>我也不知道暂时要写点什么在这里……</em></h2>
-        <h2><em>或许你可以看下我的文章……</em></h2>
-        <h2><em>也许可以帮助你……</em></h2>
-        <br /><br />
+            <main class="col-md-8">
+       {% for article in article_list %}
+                    <article class="post post-#">
+            <header class="entry-header">
+                <h1 class="entry-title">
+                    <a href="{% url "article" %}?id={{ article.id }}" rel="bookmark">{{ article.title }}</a>
+                </h1>
+                <div class="entry-meta">
+                    <span class="post-category">
+                        <a href="#">分类</a></span>
+                    <span class="post-date"><a href="#"><time class="entry-date"
+                                                              datetime="#">时间</time></a></span>
+                    <span class="post-author"><a href="#">{{ article.user }}</a></span>
+                    <span class="comments-link">
+                        <a href="#">评论</a></span>
+                    <span class="views-count"><a href="#">1000阅读</a></span>
+                </div>
+            </header>
+            <div class="entry-content clearfix">
+                <div class="read-more cl-effect-10">
+                    <a href="{% url "article" %}?id={{ article.id }}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
+                </div>
+            </div>
+        </article>
+    {% empty %}
+        <div class="no-post">暂时还没有发布的文章！</div>
+    {% endfor %}
+            </main>
+
+            <aside class="col-md-4">
+                {% block toc %}
+                {% endblock toc %}
+                <div class="widget widget-recent-posts">
+                    <h3 class="widget-title">最新文章</h3>
+                    <ul>
+                {% for article in article_list %}
+                            <li>
+                               <a href="{% url "article" %}?id={{ article.id }}" rel="bookmark">{{ article.title }}</a>
+                            </li>
+                        {% empty %}
+                            暂无文章
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="widget widget-tag-cloud">
+                    <h3 class="widget-title">标签云</h3>
+                    <ul>
+                        {% for tag in tag_list %}
+                            <li>
+                                <a href="#">{{ tag.name }}</a>
+                            </li>
+                        {% empty %}
+                            暂无标签！
+                        {% endfor %}
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
     </div>
-</main>
+</div>
+        <!-- js -->
+    <script src="{% static 'blog/js/pace.min.js' %}"></script>
+    <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'blog/js/script.js' %}"></script>
+
+
 {% endblock %}

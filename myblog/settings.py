@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4-se&*qz_^14^onwb05auh8)1(!a8fwdyote@8%ked8nnz*3)i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False 
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -91,9 +91,8 @@ DATABASES = {
         'NAME': 'origindb',
         'USER' : 'django',
         'PASSWORD'  : 'gyh201727',
-        'HOST' : '120.77.251.209',
+'HOST' : '120.77.251.209',
         'PORT' : '3306',
-
     }
 }
 

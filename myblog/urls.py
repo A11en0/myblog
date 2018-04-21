@@ -30,5 +30,6 @@ urlpatterns = [
     re_path(r'^logout$', do_logout, name='logout'),
     re_path(r'^reg', do_reg, name='reg'),
     re_path(r'^login', do_login, name='login'),
+
    ] 
 

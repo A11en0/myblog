@@ -43,6 +43,7 @@ def index(request):
     try:
         # 最新文章数据
         article_list = getPage(request, Article.objects.all())
+        tag_list = getPage(request, Tag.objects.all())
     except Exception as e:
         logger.error(e)
     return render(request, 'index.html', locals())
@@ -79,6 +80,7 @@ def getPage(request, article_list):
         article_list = paginator.page(page)
     return article_list
 
+
 # 文章详情
 def article(request):
     try:
@@ -89,7 +91,6 @@ def article(request):
             article = Article.objects.get(id=id)
         except Article.DoesNotExist:
             return render(request, 'failure.html', {'reason': '没有找到对应的文章'})
-
 
         # 评论表单
         comment_form = CommentForm({'article':id})
@@ -117,7 +118,6 @@ def blog(request):
     except Exception as e:
         logger.error(e)
     return render(request, 'blog.html', locals())
-
 
 # 提交评论
 def comment_post(request):
@@ -210,3 +210,4 @@ def page_not_found(request):
 
 def page_error(request):
     return render(request,'500.html')
+
