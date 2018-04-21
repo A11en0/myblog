@@ -19019,3 +19019,1571 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
     (bit, current))  # missing attribute
 django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'archive_list': ['2018/04月文章存档'], 'user': <SimpleLazyObject: <User: allen>>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>], 'category_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fa1ca1b7c18>, 'request': <WSGIRequest: GET '/admin/'>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fa1cde3f048>>, 'article_recommend_list': <QuerySet []>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'SITE_NAME': "A11en0's Blog", 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'links': <QuerySet []>, 'SITE_DESC': '', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'DEBUG': 10}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fa1ca1e9e10>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>}, {}, {'available_apps': [{'models': [{'name': 'Groups', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'object_name': 'Group', 'add_url': '/admin/auth/group/add/'}], 'name': 'Authentication and Authorization', 'has_module_perms': True, 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'models': [{'name': '分类', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/category/', 'object_name': 'Category', 'add_url': '/admin/blog/category/add/'}, {'name': '友情链接', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/links/', 'object_name': 'Links', 'add_url': '/admin/blog/links/add/'}, {'name': '广告', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/ad/', 'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/'}, {'name': '文章', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/article/', 'object_name': 'Article', 'add_url': '/admin/blog/article/add/'}, {'name': '标签', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/tag/', 'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/'}, {'name': '用户', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/user/', 'object_name': 'User', 'add_url': '/admin/blog/user/add/'}, {'name': '评论', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/comment/', 'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/'}], 'name': 'Blog', 'has_module_perms': True, 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'site_url': '/', 'title': 'Site administration', 'has_permission': True, 'site_title': 'Django site admin', 'site_header': 'Django administration', 'app_list': [{'models': [{'name': 'Groups', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'object_name': 'Group', 'add_url': '/admin/auth/group/add/'}], 'name': 'Authentication and Authorization', 'has_module_perms': True, 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'models': [{'name': '分类', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/category/', 'object_name': 'Category', 'add_url': '/admin/blog/category/add/'}, {'name': '友情链接', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/links/', 'object_name': 'Links', 'add_url': '/admin/blog/links/add/'}, {'name': '广告', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/ad/', 'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/'}, {'name': '文章', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/article/', 'object_name': 'Article', 'add_url': '/admin/blog/article/add/'}, {'name': '标签', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/tag/', 'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/'}, {'name': '用户', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/user/', 'object_name': 'User', 'add_url': '/admin/blog/user/add/'}, {'name': '评论', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/blog/comment/', 'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/'}], 'name': 'Blog', 'has_module_perms': True, 'app_label': 'blog', 'app_url': '/admin/blog/'}]}]
+2018-04-21 01:17:18,537 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf4bd978>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf488>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf40eb00>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:17:19,205 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf4bd978>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf488>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf40eb00>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:17:20,863 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf4e3fd0>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf400>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf42ca20>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:17:21,636 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf4e3fd0>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf400>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf42ca20>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:17:30,389 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf48a7f0>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf620>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf410ba8>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:17:31,073 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf48a7f0>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf620>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf410ba8>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:17:34,581 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in [{'None': None, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9bf56bd08>>, 'False': False, 'True': True}]
+2018-04-21 01:17:41,966 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="">---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1" selected>allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:17:41,971 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:17:41,975 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5" selected>ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:17:41,976 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5" selected>ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:18:16,979 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="" selected>---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1">allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:18:16,983 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:18:16,988 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:18:16,988 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:06,466 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="" selected>---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1">allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:06,472 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:06,478 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:06,479 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:18,751 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="" selected>---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1">allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:18,755 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:18,759 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:18,760 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf378c18>, <TextNode: '\n    '>]>}]
+2018-04-21 01:19:41,013 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: 你好啊>
+2018-04-21 01:40:02,753 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: Hello>
+2018-04-21 01:42:18,300 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf31e0b8>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>, <Article: shadowsocks 教程>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf598>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf31e9e8>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:42:19,007 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf31e0b8>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>, <Article: shadowsocks 教程>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf598>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf31e9e8>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:42:20,706 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf3cb978>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>, <Article: shadowsocks 教程>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf488>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf350588>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:42:21,445 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf3cb978>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>, <Article: shadowsocks 教程>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf488>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf350588>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:42:24,216 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf31ebe0>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>, <Article: shadowsocks 教程>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf400>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf365588>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:42:24,917 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'None': None, 'False': False, 'True': True}, {'SITE_DESC': '', 'SITE_NAME': "A11en0's Blog", 'request': <WSGIRequest: GET '/admin/'>, 'links': <QuerySet []>, 'comment_count_list': <QuerySet [{'comment_count': 19, 'article': 1}, {'comment_count': 3, 'article': 4}, {'comment_count': 2, 'article': 2}, {'comment_count': 2, 'article': 3}, {'comment_count': 2, 'article': 6}]>, 'archive_list': ['2018/04月文章存档'], 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd9bf31ebe0>, 'article_click_list': <QuerySet [<Article: django博客开发：添加评论功能>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: 阿里云安装配置mysql>, <Article: Git 基础 - 远程仓库的使用>, <Article: Shadowsocks Tutorial>, <Article: shadowsocks 教程>]>, 'category_list': <QuerySet []>, 'user': <SimpleLazyObject: <User: allen>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9c30bf400>>, 'article_recommend_list': <QuerySet []>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd9bf365588>, 'tags': <QuerySet [<Tag: Django>, <Tag: computer network>, <Tag: 服务器>, <Tag: git>, <Tag: ss>]>, 'article_comment_list': [<Article: django博客开发：添加评论功能>, <Article: 阿里云安装配置mysql>, <Article: HTTP协议——状态码>, <Article: 配置nginx uwsgi部署Django项目>, <Article: Git 基础 - 远程仓库的使用>]}, {}, {'title': 'Site administration', 'site_title': 'Django site admin', 'site_url': '/', 'site_header': 'Django administration', 'available_apps': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False, 'app_list': [{'has_module_perms': True, 'name': 'Authentication and Authorization', 'models': [{'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'name': 'Groups', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'auth', 'app_url': '/admin/auth/'}, {'has_module_perms': True, 'name': 'Blog', 'models': [{'object_name': 'Category', 'add_url': '/admin/blog/category/add/', 'name': '分类', 'admin_url': '/admin/blog/category/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Links', 'add_url': '/admin/blog/links/add/', 'name': '友情链接', 'admin_url': '/admin/blog/links/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Ad', 'add_url': '/admin/blog/ad/add/', 'name': '广告', 'admin_url': '/admin/blog/ad/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Article', 'add_url': '/admin/blog/article/add/', 'name': '文章', 'admin_url': '/admin/blog/article/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Tag', 'add_url': '/admin/blog/tag/add/', 'name': '标签', 'admin_url': '/admin/blog/tag/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'User', 'add_url': '/admin/blog/user/add/', 'name': '用户', 'admin_url': '/admin/blog/user/', 'perms': {'delete': True, 'add': True, 'change': True}}, {'object_name': 'Comment', 'add_url': '/admin/blog/comment/add/', 'name': '评论', 'admin_url': '/admin/blog/comment/', 'perms': {'delete': True, 'add': True, 'change': True}}], 'app_label': 'blog', 'app_url': '/admin/blog/'}], 'has_permission': True}]
+2018-04-21 01:42:28,148 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in [{'None': None, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9bf56bc80>>, 'False': False, 'True': True}]
+2018-04-21 01:42:33,127 [uWSGIWorker1Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="" selected>---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1">allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf38dd30>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:33,133 [uWSGIWorker1Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf38dd30>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:33,138 [uWSGIWorker1Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf38dd30>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:33,139 [uWSGIWorker1Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf38dd30>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:58,224 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="" selected>---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1">allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:58,230 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:58,235 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:42:58,235 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:43:34,056 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in [{'None': None, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fd9bf3e4598>>, 'False': False, 'True': True}]
+2018-04-21 01:43:37,132 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/user/add/', 'name': 'user', 'model': '用户', 'rendered_widget': '<select name="user" id="id_user" required>\n  <option value="">---------</option>\n\n  <option value="8">456</option>\n\n  <option value="7">123</option>\n\n  <option value="6">123456</option>\n\n  <option value="5">qiugang</option>\n\n  <option value="4">test</option>\n\n  <option value="3">a11en0</option>\n\n  <option value="2">django</option>\n\n  <option value="1" selected>allen</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/user/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:43:37,138 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/category/add/', 'name': 'category', 'model': '分类', 'rendered_widget': '<select name="category" id="id_category">\n  <option value="" selected>---------</option>\n\n</select>', 'can_change_related': True, 'change_related_template_url': '/admin/blog/category/__fk__/change/', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:43:37,144 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_change_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_change_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_change_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n  <option value="6" selected>网站开发</option>\n\n  <option value="7" selected>Web开发</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:43:37,145 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'can_delete_related' in template 'admin/widgets/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'can_delete_related'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [can_delete_related] in [{'None': None, 'False': False, 'True': True}, {'url_params': '_to_field=id&_popup=1', 'add_related_url': '/admin/blog/tag/add/', 'name': 'tag', 'model': '标签', 'rendered_widget': '<select name="tag" id="id_tag" multiple="multiple" required>\n  <option value="1">Django</option>\n\n  <option value="2">computer network</option>\n\n  <option value="3">服务器</option>\n\n  <option value="4">git</option>\n\n  <option value="5">ss</option>\n\n  <option value="6" selected>网站开发</option>\n\n  <option value="7" selected>Web开发</option>\n\n</select>', 'can_add_related': True}, {'block': <Block Node: links. Contents: [<TextNode: '\n        '>, <django.template.defaulttags.SpacelessNode object at 0x7fd9bf3b4dd8>, <TextNode: '\n    '>]>}]
+2018-04-21 01:44:23,466 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert(document.cookie);</script>>
+2018-04-21 01:44:42,287 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:46:38,313 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:46:41,257 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:46:42,123 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:46:47,930 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:47:03,930 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:47:10,062 [uWSGIWorker3Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:47:10,843 [uWSGIWorker4Core0:140573325189376] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:47:28,051 [uWSGIWorker2Core0:140045074915584] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:48:12,808 [uWSGIWorker3Core0:139876515381504] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 01:48:51,606 [uWSGIWorker3Core0:139906123604224] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>

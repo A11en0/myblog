@@ -49535,3 +49535,5 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 58: 's
 2018-04-20 12:07:00,492 [uWSGIWorker4Core0:140332988932352] [django.request:93] [base:get_response] [WARNING]- Not Found: /trefdafdsa
 2018-04-20 12:07:28,710 [uWSGIWorker1Core0:140332988932352] [django.request:93] [base:get_response] [WARNING]- Not Found: /t4315
 2018-04-20 12:07:49,866 [uWSGIWorker4Core0:140332988932352] [django.request:93] [base:get_response] [WARNING]- Not Found: /allen
+2018-04-21 01:17:10,353 [uWSGIWorker4Core0:140573325189376] [django.request:93] [base:get_response] [WARNING]- Not Found: /art
+2018-04-21 01:17:11,231 [uWSGIWorker3Core0:140573325189376] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico

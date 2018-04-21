@@ -42,8 +42,8 @@ class CommentForm(forms.Form):
     '''
 
     comment = forms.CharField(widget=forms.Textarea(attrs={"id":"comment","class": "message_input",
-                                                           "required": "required", "cols": "76",
-                                                           "rows": "15", "tabindex": "4"}),
+                                                           "required": "required", "cols": "50",
+                                                           "rows": "10", "tabindex": "4"}),
                                                     error_messages={"required":"评论不能为空",})
 
     article = forms.CharField(widget=forms.HiddenInput())
