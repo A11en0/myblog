@@ -14444,3 +14444,598 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [children_comme
 2018-04-15 13:38:20,991 [Thread-14:140453024933632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.117) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
 2018-04-15 13:38:20,993 [Thread-14:140453024933632] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3740
 2018-04-15 13:38:21,430 [Thread-15:140453041719040] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:41:55,413 [Dummy-1:139924665386752] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:41:55,471 [Dummy-1:139924665386752] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:41:55,534 [Dummy-1:139924665386752] [django.db.backends:111] [utils:execute] [DEBUG]- (0.062) SELECT VERSION(); args=None
+2018-04-15 14:41:55,894 [Dummy-1:139924665386752] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:41:55,940 [Dummy-1:139924665386752] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SHOW FULL TABLES; args=None
+2018-04-15 14:41:56,003 [Dummy-1:139924665386752] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:41:56,777 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:41:56,815 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:41:56,849 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
+2018-04-15 14:41:56,893 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.041) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:41:56,934 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:41:56,972 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SELECT VERSION(); args=None
+2018-04-15 14:41:57,134 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.161) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:41:57,264 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.129) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:41:57,307 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.041) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:41:57,396 [Thread-2:139924653774592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.089) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:41:57,408 [Thread-2:139924653774592] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3729
+2018-04-15 14:41:59,937 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:41:59,971 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:00,008 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SELECT COUNT(*) AS `__count` FROM `blog_article`; args=()
+2018-04-15 14:42:00,055 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:42:00,089 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.033) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:42:00,126 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.035) SELECT VERSION(); args=None
+2018-04-15 14:42:00,291 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.165) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:42:00,412 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.120) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:42:00,459 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:42:00,538 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.078) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:00,816 [Thread-3:139924645381888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.274) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC LIMIT 5; args=()
+2018-04-15 14:42:00,831 [Thread-3:139924645381888] [django.server:124] [basehttp:log_message] [INFO]- "GET /blog/ HTTP/1.1" 200 6780
+2018-04-15 14:42:02,239 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.041) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:02,283 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.043) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:02,322 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SELECT VERSION(); args=None
+2018-04-15 14:42:02,735 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:02,879 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.143) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:02,940 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:42:03,016 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.063) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:42:03,075 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:42:03,325 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.249) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:42:03,536 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.210) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:42:03,608 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.071) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:42:03,749 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.139) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:03,814 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.060) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj' AND `django_session`.`expire_date` > '2018-04-15 14:42:03.753383'); args=('puiqcc4gyovjpym3xyxigz62e6prrudj', '2018-04-15 14:42:03.753383')
+2018-04-15 14:42:03,877 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:03,972 [Thread-4:139924636989184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.064) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:03,973 [Thread-4:139924636989184] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:42:03,990 [Thread-4:139924636989184] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21270
+2018-04-15 14:42:04,035 [Thread-5:139924628596480] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/default.png HTTP/1.1" 304 0
+2018-04-15 14:42:22,922 [Dummy-1:140558015215360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.040) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:22,961 [Dummy-1:140558015215360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:22,997 [Dummy-1:140558015215360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.035) SELECT VERSION(); args=None
+2018-04-15 14:42:23,547 [Dummy-1:140558015215360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.073) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:23,627 [Dummy-1:140558015215360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.079) SHOW FULL TABLES; args=None
+2018-04-15 14:42:23,704 [Dummy-1:140558015215360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.073) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:42:28,355 [Dummy-1:140370454800128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:28,392 [Dummy-1:140370454800128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:28,441 [Dummy-1:140370454800128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SELECT VERSION(); args=None
+2018-04-15 14:42:28,936 [Dummy-1:140370454800128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:28,995 [Dummy-1:140370454800128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SHOW FULL TABLES; args=None
+2018-04-15 14:42:29,059 [Dummy-1:140370454800128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:42:30,755 [Thread-2:140370443187968] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:30,800 [Thread-2:140370443187968] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:30,849 [Thread-2:140370443187968] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SELECT VERSION(); args=None
+2018-04-15 14:42:31,845 [Dummy-1:140641218541312] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:31,894 [Dummy-1:140641218541312] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:31,946 [Dummy-1:140641218541312] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SELECT VERSION(); args=None
+2018-04-15 14:42:32,368 [Dummy-1:140641218541312] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:32,424 [Dummy-1:140641218541312] [django.db.backends:111] [utils:execute] [DEBUG]- (0.056) SHOW FULL TABLES; args=None
+2018-04-15 14:42:32,474 [Dummy-1:140641218541312] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:42:35,449 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:35,484 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.035) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:35,521 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SELECT VERSION(); args=None
+2018-04-15 14:42:35,871 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:35,980 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.108) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:36,033 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.052) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:42:36,089 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.053) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:42:36,137 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:42:36,365 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.227) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:42:36,680 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.313) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:42:36,771 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.091) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:42:36,878 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.105) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:36,954 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj' AND `django_session`.`expire_date` > '2018-04-15 14:42:36.901933'); args=('puiqcc4gyovjpym3xyxigz62e6prrudj', '2018-04-15 14:42:36.901933')
+2018-04-15 14:42:37,084 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.128) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:37,141 [Thread-2:140641206929152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:37,142 [Thread-2:140641206929152] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:42:37,146 [Thread-2:140641206929152] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:42:37,759 [Thread-3:140641198536448] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:42:55,513 [Dummy-1:139624800589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.063) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:55,581 [Dummy-1:139624800589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.067) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:55,641 [Dummy-1:139624800589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.060) SELECT VERSION(); args=None
+2018-04-15 14:42:55,932 [Dummy-1:139624800589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:55,974 [Dummy-1:139624800589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SHOW FULL TABLES; args=None
+2018-04-15 14:42:56,015 [Dummy-1:139624800589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:42:56,533 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:56,577 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.054) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:42:56,601 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.068) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:56,626 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:56,664 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.063) SELECT VERSION(); args=None
+2018-04-15 14:42:56,673 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT VERSION(); args=None
+2018-04-15 14:42:57,191 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.071) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:57,258 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:42:57,351 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.160) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:57,430 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.078) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:42:57,435 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.177) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:57,515 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:42:57,527 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.090) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:42:57,592 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.076) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:42:57,613 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:42:57,696 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:42:57,911 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.318) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:42:58,040 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.342) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:42:58,166 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.254) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:42:58,251 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:42:58,311 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.270) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:42:58,403 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.091) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:42:58,432 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.181) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:58,517 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.072) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-15 14:42:58.444176' AND `django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj'); args=('2018-04-15 14:42:58.444176', 'puiqcc4gyovjpym3xyxigz62e6prrudj')
+2018-04-15 14:42:58,575 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.171) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:42:58,602 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:58,672 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.094) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-15 14:42:58.578306' AND `django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj'); args=('2018-04-15 14:42:58.578306', 'puiqcc4gyovjpym3xyxigz62e6prrudj')
+2018-04-15 14:42:58,722 [Thread-2:139624788977408] [django.db.backends:111] [utils:execute] [DEBUG]- (0.112) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:58,723 [Thread-2:139624788977408] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:42:58,724 [Thread-2:139624788977408] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:42:58,774 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.100) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:58,863 [Thread-3:139624780584704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:42:58,864 [Thread-3:139624780584704] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:42:58,865 [Thread-3:139624780584704] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:42:59,391 [Thread-4:139624772192000] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:43:10,124 [Thread-6:139624554952448] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:10,169 [Thread-6:139624554952448] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:10,215 [Thread-6:139624554952448] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT VERSION(); args=None
+2018-04-15 14:43:11,228 [Dummy-1:140627205244672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:11,309 [Dummy-1:140627205244672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.080) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:11,391 [Dummy-1:140627205244672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SELECT VERSION(); args=None
+2018-04-15 14:43:11,690 [Dummy-1:140627205244672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:11,726 [Dummy-1:140627205244672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SHOW FULL TABLES; args=None
+2018-04-15 14:43:11,766 [Dummy-1:140627205244672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:43:12,463 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.085) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:12,551 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.087) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:12,635 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT VERSION(); args=None
+2018-04-15 14:43:12,982 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:13,092 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.109) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:13,146 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.053) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:43:13,196 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:43:13,247 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:43:13,458 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.210) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:43:13,619 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.160) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:43:13,683 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.062) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:43:13,789 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.105) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:13,847 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-15 14:43:13.798198' AND `django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj'); args=('2018-04-15 14:43:13.798198', 'puiqcc4gyovjpym3xyxigz62e6prrudj')
+2018-04-15 14:43:13,896 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:13,953 [Thread-2:140627193632512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.050) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:13,954 [Thread-2:140627193632512] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:43:13,955 [Thread-2:140627193632512] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:43:14,531 [Thread-3:140627185239808] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:43:22,357 [Dummy-1:140291853977344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:22,393 [Dummy-1:140291853977344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:22,427 [Dummy-1:140291853977344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.033) SELECT VERSION(); args=None
+2018-04-15 14:43:22,817 [Dummy-1:140291853977344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:22,867 [Dummy-1:140291853977344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SHOW FULL TABLES; args=None
+2018-04-15 14:43:22,914 [Dummy-1:140291853977344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:43:23,783 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:23,845 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:23,903 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SELECT VERSION(); args=None
+2018-04-15 14:43:24,316 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.061) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:24,442 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.125) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:24,503 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:43:24,563 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:43:24,624 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.060) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:43:24,879 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.254) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:43:25,087 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.208) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:43:25,152 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.064) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:43:25,294 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.140) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:25,363 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-15 14:43:25.303065' AND `django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj'); args=('2018-04-15 14:43:25.303065', 'puiqcc4gyovjpym3xyxigz62e6prrudj')
+2018-04-15 14:43:25,427 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.062) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:25,497 [Thread-2:140291842365184] [django.db.backends:111] [utils:execute] [DEBUG]- (0.062) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:25,498 [Thread-2:140291842365184] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:43:25,499 [Thread-2:140291842365184] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:43:25,854 [Thread-3:140291833972480] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:43:34,115 [Thread-5:140291833972480] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:34,162 [Thread-5:140291833972480] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:34,209 [Thread-5:140291833972480] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT VERSION(); args=None
+2018-04-15 14:43:34,919 [Dummy-1:139691890415360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.044) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:34,978 [Dummy-1:139691890415360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:35,022 [Dummy-1:139691890415360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.044) SELECT VERSION(); args=None
+2018-04-15 14:43:35,290 [Dummy-1:139691890415360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:35,326 [Dummy-1:139691890415360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.035) SHOW FULL TABLES; args=None
+2018-04-15 14:43:35,363 [Dummy-1:139691890415360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:43:36,150 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:36,235 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.085) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:36,319 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT VERSION(); args=None
+2018-04-15 14:43:36,564 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:36,646 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.082) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:36,686 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:43:36,722 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:43:36,761 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:43:36,943 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.180) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:43:37,064 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.120) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:43:37,110 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:43:37,198 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.087) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:37,244 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-15 14:43:37.207752' AND `django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj'); args=('2018-04-15 14:43:37.207752', 'puiqcc4gyovjpym3xyxigz62e6prrudj')
+2018-04-15 14:43:37,287 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:37,330 [Thread-2:139691878803200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:37,331 [Thread-2:139691878803200] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:43:37,333 [Thread-2:139691878803200] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:43:37,920 [Thread-3:139691798034176] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:43:45,455 [Thread-4:139691798034176] [django.db.backends:111] [utils:execute] [DEBUG]- (0.048) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:45,500 [Thread-4:139691798034176] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:45,547 [Thread-4:139691798034176] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT VERSION(); args=None
+2018-04-15 14:43:46,384 [Dummy-1:140374170789632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.050) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:46,424 [Dummy-1:140374170789632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.040) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:46,464 [Dummy-1:140374170789632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.040) SELECT VERSION(); args=None
+2018-04-15 14:43:46,908 [Dummy-1:140374170789632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.058) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:46,968 [Dummy-1:140374170789632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.059) SHOW FULL TABLES; args=None
+2018-04-15 14:43:47,035 [Dummy-1:140374170789632] [django.db.backends:111] [utils:execute] [DEBUG]- (0.066) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:43:48,009 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:48,056 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:48,103 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT VERSION(); args=None
+2018-04-15 14:43:48,435 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:48,539 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.103) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:48,595 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.055) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:43:48,660 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.062) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:43:48,713 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.051) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:43:48,922 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.208) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:43:49,095 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.172) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:43:49,146 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.050) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:43:49,253 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.106) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:49,314 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.050) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-15 14:43:49.261597' AND `django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj'); args=('2018-04-15 14:43:49.261597', 'puiqcc4gyovjpym3xyxigz62e6prrudj')
+2018-04-15 14:43:49,365 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:49,420 [Thread-2:140374091683584] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:49,421 [Thread-2:140374091683584] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:43:49,422 [Thread-2:140374091683584] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:43:49,802 [Thread-3:140374083290880] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:43:54,795 [Thread-4:140374074898176] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:54,848 [Thread-4:140374074898176] [django.db.backends:111] [utils:execute] [DEBUG]- (0.052) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:54,897 [Thread-4:140374074898176] [django.db.backends:111] [utils:execute] [DEBUG]- (0.049) SELECT VERSION(); args=None
+2018-04-15 14:43:55,872 [Dummy-1:140326610421504] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:55,919 [Dummy-1:140326610421504] [django.db.backends:111] [utils:execute] [DEBUG]- (0.047) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:55,964 [Dummy-1:140326610421504] [django.db.backends:111] [utils:execute] [DEBUG]- (0.045) SELECT VERSION(); args=None
+2018-04-15 14:43:56,260 [Dummy-1:140326610421504] [django.db.backends:111] [utils:execute] [DEBUG]- (0.040) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:56,298 [Dummy-1:140326610421504] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SHOW FULL TABLES; args=None
+2018-04-15 14:43:56,339 [Dummy-1:140326610421504] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-15 14:43:56,995 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.075) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:43:57,074 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.078) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:57,151 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.076) SELECT VERSION(); args=None
+2018-04-15 14:43:57,425 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.037) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:43:57,510 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.085) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:57,547 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.035) SELECT `blog_comment`.`id`, `blog_comment`.`content`, `blog_comment`.`date_publish`, `blog_comment`.`user_id`, `blog_comment`.`article_id`, `blog_comment`.`pid_id` FROM `blog_comment` WHERE `blog_comment`.`article_id` = 6 ORDER BY `blog_comment`.`id` ASC; args=(6,)
+2018-04-15 14:43:57,592 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT `blog_article`.`date_publish` FROM `blog_article` ORDER BY `blog_article`.`date_publish` DESC; args=()
+2018-04-15 14:43:57,628 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.035) SELECT `blog_comment`.`article_id`, COUNT(`blog_comment`.`article_id`) AS `comment_count` FROM `blog_comment` GROUP BY `blog_comment`.`article_id` ORDER BY `comment_count` DESC; args=()
+2018-04-15 14:43:57,806 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.177) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2018-04-15 14:43:57,946 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.139) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 2; args=(2,)
+2018-04-15 14:43:58,021 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.073) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2018-04-15 14:43:58,106 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.084) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`desc`, `blog_article`.`content`, `blog_article`.`click_count`, `blog_article`.`is_recommend`, `blog_article`.`date_publish`, `blog_article`.`user_id`, `blog_article`.`category_id` FROM `blog_article` WHERE `blog_article`.`id` = 6; args=(6,)
+2018-04-15 14:43:58,156 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.041) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'puiqcc4gyovjpym3xyxigz62e6prrudj' AND `django_session`.`expire_date` > '2018-04-15 14:43:58.114312'); args=('puiqcc4gyovjpym3xyxigz62e6prrudj', '2018-04-15 14:43:58.114312')
+2018-04-15 14:43:58,202 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.044) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:58,251 [Thread-2:140326598809344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.044) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `blog_user`.`url` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2018-04-15 14:43:58,252 [Thread-2:140326598809344] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/allen/venv/myblog/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)>
+2018-04-15 14:43:58,254 [Thread-2:140326598809344] [django.server:124] [basehttp:log_message] [INFO]- "GET /article/?id=6 HTTP/1.1" 200 21269
+2018-04-15 14:43:58,716 [Thread-3:140326590416640] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/images/gt_favicon.png HTTP/1.1" 200 370
+2018-04-15 14:44:20,398 [Dummy-1:140555256715008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.036) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-15 14:44:20,441 [Dummy-1:140555256715008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:44:20,483 [Dummy-1:140555256715008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.042) SELECT VERSION(); args=None
+2018-04-15 14:44:20,787 [Dummy-1:140555256715008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.038) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-15 14:44:20,826 [Dummy-1:140555256715008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SHOW FULL TABLES; args=None
+2018-04-15 14:44:20,867 [Dummy-1:140555256715008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.039) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-04-20 10:51:35,895 [Dummy-1:140574296463104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.044) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-04-20 10:51:35,945 [Dummy-1:140574296463104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.041) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-20 10:51:35,980 [Dummy-1:140574296463104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.034) SELECT VERSION(); args=None
+2018-04-20 10:51:36,471 [Dummy-1:140574296463104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.046) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2018-04-20 10:51:36,521 [Dummy-1:140574296463104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.050) SHOW FULL TABLES; args=None
+2018-04-20 10:51:36,602 [Dummy-1:140574296463104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.063) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

@@ -19,6 +19,7 @@ from blog.views import *
 from django.conf import settings
 from django.views.static import serve
 from blog.upload import upload_image
+from django.conf.urls import handler404, handler500
 
 urlpatterns = [
     path('admin/', admin.site.urls),
