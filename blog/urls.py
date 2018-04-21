@@ -1,5 +1,6 @@
 from django.urls import re_path
 from blog.views import *
+from django.conf.urls import handler404, handler500
 
 urlpatterns = [
     re_path(r'^$', index, name='index'),
@@ -11,3 +12,5 @@ urlpatterns = [
 ]
 
 
+handler500=page_error
+handler404=page_not_found

@@ -12,13 +12,13 @@
                               <span class="pull-right">{{ comment.date_publish | date:'Y-m-d H:i:s' }}</span>
                           </h3>
 
-                          <div class="pinglun-text">{{ comment.content | safe }}</div>
+                          <div class="pinglun-text">{{ comment.content }}</div>
 
                           {% for children_comment in comment.children_comment %}
                               <div class="parent-pinglun">
                                   <blockquote>
                                       <em><i class="fa fa-quote-left"></i>{{ children_comment.user }}</em><br>
-                                      <div>{{ children_comment.content | safe }}</div>
+                                      <div>{{ children_comment.content }}</div>
                                   </blockquote>
                               </div>
                           {% endfor %}
