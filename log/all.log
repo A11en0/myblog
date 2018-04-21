@@ -20587,3 +20587,29 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
     (bit, current))  # missing attribute
 django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert("xss")</script>>
+2018-04-21 02:01:19,537 [uWSGIWorker1Core0:140199786270976] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'children_comment' in template 'single.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Comment' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Comment' object has no attribute 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'children_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [children_comment] in <Comment: <script>alert(document.cookie);</script>>
