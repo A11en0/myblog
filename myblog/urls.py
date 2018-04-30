@@ -27,6 +27,7 @@ urlpatterns = [
     re_path(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
     re_path('', include('blog.urls')),
     re_path(r'^comment/post/$', comment_post, name='comment_post'),
+    re_path(r'^archive/', archive,name='archive'),
     re_path(r'^logout$', do_logout, name='logout'),
     re_path(r'^reg', do_reg, name='reg'),
     re_path(r'^login', do_login, name='login'),

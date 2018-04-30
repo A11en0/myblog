@@ -466,3 +466,6 @@
 2018-04-15 14:46:23,006 [uWSGIWorker2Core0:139794044150016] [blog.views:113] [views:article] [ERROR]- invalid literal for int() with base 10: '2("")\',.)(('
 2018-04-16 02:25:34,110 [uWSGIWorker4Core0:140708439417088] [blog.views:113] [views:article] [ERROR]- invalid literal for int() with base 10: '3/cookies.php?cookie=csrftoken=0fqB2hG0pK1pi0aCphDenm3lEReko9CrSgPbwpUkwvHcbR6avnoptaslQHkIY5Nk HTTP/1.1'
 2018-04-16 02:25:50,842 [uWSGIWorker3Core0:140708439417088] [blog.views:113] [views:article] [ERROR]- invalid literal for int() with base 10: '3/cookies.php?cookie=0fqB2hG0pK1pi0aCphDenm3lEReko9CrSgPbwpUkwvHcbR6avnoptaslQHkIY5Nk HTTP/1.1'
+2018-04-30 04:40:52,755 [Thread-15:139896882722560] [blog.views:93] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-04-30 04:42:27,916 [Thread-6:139667898885888] [blog.views:64] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-04-30 04:46:53,786 [Thread-2:140031717594880] [blog.views:65] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'

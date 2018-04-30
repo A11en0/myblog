@@ -26,7 +26,7 @@
 
 /**
  * 2.0 - General Elements
- */
+
 
 * {
     outline: none;
@@ -101,7 +101,7 @@ img {
 
 /**
  * 3.0 - Site Header
- */
+
 
 #site-header {
     background-color: #FFF;
@@ -118,9 +118,9 @@ img {
     overflow: hidden;
 }
 
-/**
+
  * 3.1 - Logo
- */
+
 
 .logo h1 a {
     color: #000;
@@ -137,9 +137,9 @@ img {
     font-weight: 300;
 }
 
-/**
+
  * 3.2 - Main Navigation
- */
+
 
 .main-nav {
     margin-top: 11px;
@@ -173,6 +173,7 @@ img {
     font-size: 2em;
     color: #000;
 }
+ */
 
 /**
  * 3.2.1 - Main Nav CSS 3 Hover Effect
@@ -336,7 +337,9 @@ img {
  */
 
 .widget {
-    /*background: #fff;*/
+    /*
+    *background: #fff
+    */
     padding: 30px 0 0;
 }
 
@@ -433,6 +436,7 @@ img {
     margin-bottom: 10px;
     padding: 3px 8px;
     border: 1px solid #ddd;
+    background: #8A9B0F;
 }
 
 .widget-content ul ul {

@@ -17,7 +17,7 @@ def globals_setting(request):
     SITE_NAME =  settings.SITE_NAME
     SITE_DESC = settings.SITE_DESC
     # 导航栏（分类）数据
-    category_list = Category.objects.all()
+    #category_list = Category.objects.all()
     # 文章归档数据
     archive_list = Article.objects.distinct_date()
     #广告数据
@@ -37,40 +37,37 @@ def globals_setting(request):
     article_recommend_list = Article.objects.filter(is_recommend=True).order_by("-click_count")
     return locals()
 
-
 #主页面
 def index(request):
     try:
         # 最新文章数据
+        new_list=Article.objects.order_by("-date_publish")[:5]
         article_list = getPage(request, Article.objects.all())
-        tag_list = getPage(request, Tag.objects.all())
+        tag_list=Tag.objects.all()
+        archive_list= Article.objects.distinct_date()
+        category_list = Category.objects.all()
+        #tag_list = getPage(request, Tag.objects.all())
     except Exception as e:
         logger.error(e)
     return render(request, 'index.html', locals())
 
-def about(request): 
-    try: 
-        pass
-    except Exception as e:
-        logger.error(e)
-    return render(request, 'about.html', locals())
-
-
-#归档页面
+#归档
 def archive(request):
     try:
-        #先获取客户端提交的信息
         year = request.GET.get('year', None)
         month = request.GET.get('month', None)
         article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)
         article_list = getPage(request, article_list)
+
+        new_list=Article.objects.order_by("-date_publish")[:5]
+        tag_list=Tag.objects.all()
+        category_list = Category.objects.all()
+
     except Exception as e:
         logger.error(e)
     return render(request, 'archive.html', locals())
 
-
 #分页
-
 def getPage(request, article_list):
     paginator = Paginator(article_list, 5)
     try:
@@ -80,6 +77,12 @@ def getPage(request, article_list):
         article_list = paginator.page(page)
     return article_list
 
+def about(request): 
+    try: 
+        pass
+    except Exception as e:
+        logger.error(e)
+    return render(request, 'about.html', locals())
 
 # 文章详情
 def article(request):
@@ -112,12 +115,14 @@ def article(request):
         logger.error(e)
     return render(request, 'single.html', locals())
 
+'''
 def blog(request):
     try:
         article_list = getPage(request, Article.objects.all())
     except Exception as e:
         logger.error(e)
     return render(request, 'blog.html', locals())
+'''
 
 # 提交评论
 def comment_post(request):
@@ -138,7 +143,6 @@ def comment_post(request):
                 article_id=comment_form.cleaned_data["article"],
                 user=request.user)
             comment.save()
-            print("okkkk!")
         else:
             return render(request, 'failure.html', {'reason': comment_form.errors})
     except Exception as e:
@@ -152,7 +156,6 @@ def do_logout(request):
     except Exception as e:
         logging.error(e)
     return redirect(request.META['HTTP_REFERER'])
-
 
 # 注册
 def do_reg(request):
@@ -179,7 +182,6 @@ def do_reg(request):
     except Exception as e:
         logging.error(e)
     return render(request, 'reg.html', locals())
-
 
 # 登录
 def do_login(request):
